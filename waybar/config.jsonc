@@ -1,0 +1,41 @@
+// Waybar Config
+
+// ────────
+// GENERAL
+// ────────
+{
+    "layer": "top",
+    "position": "top",
+    "spacing": 0,
+    "margin": "0",
+
+    // Load Modules
+    // ────────
+    "include": [
+        "~/.config/waybar/modules/builtin.jsonc",
+        "~/.config/waybar/modules/custom.jsonc"
+    ],   
+    
+    // Module Layout
+    // ────────
+    "modules-left": [
+        "hyprland/workspaces",
+        "hyprland/window"
+
+    ],
+
+    "modules-center": [
+        "mpris"
+    ],
+
+    "modules-right": [
+        "group/tray",
+        "group/audio",
+        "privacy",
+        "bluetooth",
+        "temperature#cpu",
+        "custom/ibus",
+        "clock",
+        "custom/notification"
+    ]
+}

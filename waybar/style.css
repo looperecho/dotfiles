@@ -1,0 +1,210 @@
+/* ──── Set Theme ──── */
+@import '../hypr/themes/city.css';
+
+
+/* ──── Global fonts ──── */
+* {
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 18px;
+}
+
+/* ──── Global Bar ──── */
+window#waybar {
+    background-color: alpha(@base, 0.0);
+    border-radius: 0;
+}
+
+/* ──── Global Tooltip ──── */
+tooltip * {
+    color: @text;
+    text-shadow: none;
+}
+tooltip {
+    background-color: @mixed;
+}
+
+/* ──── Global Modules ──── */
+.modules-left,
+.modules-center,
+.modules-right {
+    padding: .5em .7em;
+}
+
+/* ──── General Module Style ──── */
+#mpris,
+#tray,
+#custom-expand,
+#wireplumber,
+#privacy,
+#bluetooth,
+#temperature,
+#custom-ibus,
+#clock,
+#custom-notification {
+    color: @text;
+    padding: 0 .6em;
+}
+
+
+/* ──── Workspaces ──── */
+#workspaces {
+    margin-left: .4em;
+    border-radius: .7em;
+    padding: 0 .3em 0 .4em;
+    /*background-color: alpha(@text, .1);*/
+    transition: all 0.5s ease-in-out;
+}
+
+#workspaces button {
+    color: @text;
+    margin: 0;
+    padding: 0 0 0 0.3em;
+    opacity: 0.5;
+    background-color: alpha(@text, 0);
+    transition: all 0.5s ease-out;
+}
+
+#workspaces button.special {
+    color: @tint;
+}
+
+#workspaces button.active {
+    opacity: 1;
+    transition: all 0.5s ease-out;
+}
+
+#workspaces button:hover {
+    opacity: 1;
+    color: @tint;
+    transition: none;
+}
+
+
+/* ──── Window Title ──── */
+#window * {
+    color: @text;
+    padding: 0;
+    margin-left: .8em;
+    font-weight: 900;
+}
+
+
+/* ──── MPRIS ──── */
+#mpris.paused {
+    opacity: 0.5;
+}
+
+
+/* ──── Bluetooth ──── */
+#bluetooth.disabled {
+    color: alpha(@text, 0.5);
+}
+#bluetooth.connected {
+    color: @blue;
+}
+#bluetooth:hover {
+    color: @tint;
+}
+
+
+/* ──── Tray ──── */
+#custom-expand-tray:hover {
+    color: @tint;
+}
+
+#tray > .passive {
+    -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+    -gtk-icon-effect: highlight;
+    background-color: @tint;
+}
+
+#tray menu {
+    background-color: @base;
+}
+
+#tray menu menuitem {
+    color: @text;
+    transition-property: background-color;
+    transition-duration: 0.3s;
+}
+
+#tray menu menuitem:hover {
+    background-color: @tint;
+}
+
+
+/* ──── Wireplumber (Audio Icon) ──── */
+#wireplumber {
+        padding: 0 .2em 0 .6em;
+}
+
+#wireplumber:hover {
+    color: @tint;
+}
+
+/* ──── PulseAudio Slider ──── */
+#pulseaudio-slider slider {
+    min-height: 0;
+    min-width: 0;
+    opacity: 0;
+    background-color: @text;
+    color: @text;
+}
+
+#pulseaudio-slider slider:hover {
+    background-color: @text1;
+}
+
+#pulseaudio-slider trough {
+    min-height: .5em;
+    min-width: 6em;
+    border-radius: .3em;
+    background-color: alpha(@text, 0.5);
+}
+
+#pulseaudio-slider highlight {
+    min-width: .5em;
+    border-radius: .3em;
+    background-color: @tint;
+}
+
+/* ──── Pulse Audio (Volume %) ──── */
+#pulseaudio {
+    color: @text;
+    min-width: 3em;
+}
+
+/* ──── Audio Drawer Group ──── */
+#audio {
+  background-color: alpha(@text, 0.1);
+  border-radius: .7em;
+}
+
+
+/* ──── Privacy Icon ──── */
+#privacy-item.screenshare {
+    color: @yellow;
+}
+
+
+/* ──── Temperature CPU ──── */
+#temperature.cpu:hover {
+    color: @tint;
+}
+
+
+/* ──── Notification (Swaync) ──── */
+#custom-notification {
+    margin-right: .4em;
+    background-color: alpha(@text, 0.1);
+    border-radius: .7em;
+    padding: 0 .8em 0 .8em;
+}
+
+#custom-notification:hover {
+    color: @tint;
+}
