@@ -1,3 +1,6 @@
+# About
+This is just a backup of my own personal linux configs.
+
 # Quicklinks
 ## WM, Bar & Notifications
 - [Hyprland](hypr)
@@ -14,6 +17,3 @@
 ![](images/desktop.png)
 ![](images/alacritty.png)
 ![](images/firefox.png)
-
-# About
-This is just a backup of my own linux configs
