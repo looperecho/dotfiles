@@ -166,8 +166,8 @@
         "tooltip-format-connected-battery": "{device_alias}\nBattery: {device_battery_percentage}%",
         "tooltip-format-connected": "{device_alias}",
         "tooltip-format-enumerate-connected": "{device_alias}\n",
-        "on-click": "rfkill toggle bluetooth",
-        "on-click-right": "blueberry",
+        "on-click-middle": "rfkill toggle bluetooth",
+        "on-click": "blueberry",
         "cursor": false
     },
 
