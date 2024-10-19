@@ -151,19 +151,16 @@ tooltip {
     min-height: 0;
     min-width: 0;
     opacity: 0;
-    background-color: @text;
+    background-color: alpha(@text, 0);
+    box-shadow: none;
     color: @text;
-}
-
-#pulseaudio-slider slider:hover {
-    background-color: @text1;
 }
 
 #pulseaudio-slider trough {
     min-height: .5em;
     min-width: 6em;
     border-radius: .3em;
-    background-color: alpha(@text, 0.5);
+    background-color: alpha(@base, 0.5);
 }
 
 #pulseaudio-slider highlight {
