@@ -39,19 +39,17 @@ whatbox() {
 # ▼
 export repo="$HOME/.repo"
 export bashbin="$HOME/.repo/bin"
-export ffprofile="$HOME/.mozilla/firefox/fbx6vbty.Recoil"
 export qmkmap="$HOME/.repo/qmk/keebchron"
 export appimage="$HOME/.local/bin/appimages"
 export builds="$HOME/.local/builds"
 export CODE="$HOME/code"
 export REPO="$HOME/.repo"
-export VENVS="$HOME/.repo/python/venvs"
+export VENVS="$HOME/.repo/pyenv/versions"
 export DROP="/mnt/Drop"
 
 
 # ┌──────── Script Shortcuts 
 # ▼
-alias :themes='bash -c "$(wget -qO- https://git.io/vQgMr)"'
 alias :ytdl="$bashbin/ytdl.sh"
 alias :qmk="source $bashbin/qmk.sh"
 alias :newvenv="$bashbin/newvenv.sh"
@@ -84,7 +82,6 @@ alias reload="exec $SHELL"
 
 # ▼ Jump to exported locations
 alias .bashbin="cd $bashbin"
-alias .ffprofile="cd $ffprofile"
 alias .code="cd $CODE/$1"
 alias .qmk="cd $qmkmap"
 
@@ -112,24 +109,6 @@ bak() {
     source "$bashbin/backup.sh" "$1"
 }
 
-# ▼ Start Project Zomboid local server
-pzserver() {
-	source "$bashbin/zomboid-server.sh"
-}
-
-# ▼ Run waveflow service
-waveflow() {
-    source "$bashbin/waveflow.sh"
-}
-
-# ▼ Prevent nested ranger instance
-ranger() {
-    if [ -z "$RANGER_LEVEL" ]; then
-        /usr/bin/ranger "$@"
-    else
-        exit
-    fi
-}
 
 # ┌──────── . 
 # ▼
