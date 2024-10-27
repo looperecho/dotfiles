@@ -1,7 +1,3 @@
-# Set The Themes
-import =[
-"~/.config/alacritty/themes/Pnevma.toml",
-]
 
 # Settings
 [window]
@@ -25,4 +21,10 @@ blinking = "On"
 [keyboard]
 bindings = [
 { key = "N", mods = "Control|Shift", action = "SpawnNewInstance" },
+]
+
+[general]
+# Set The Themes
+import =[
+"~/.config/alacritty/themes/Pnevma.toml",
 ]
