@@ -23,7 +23,8 @@
         "rewrite": {
             "Loading...": "Files",
             "Spotify (.*)": "Spotify",
-            "Ulauncher(.*)": "Launcher"
+            "Ulauncher(.*)": "Launcher",
+            "wezterm": "WezTerm"
         },
         "separate-outputs": true,
         "icon": false
