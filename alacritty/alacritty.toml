@@ -1,3 +1,8 @@
+[general]
+# Set The Themes
+import =[
+    "~/.config/alacritty/themes/Pnevma.toml",
+]
 
 # Settings
 [window]
@@ -23,8 +28,3 @@ bindings = [
 { key = "N", mods = "Control|Shift", action = "SpawnNewInstance" },
 ]
 
-[general]
-# Set The Themes
-import =[
-"~/.config/alacritty/themes/Pnevma.toml",
-]
