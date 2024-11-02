@@ -185,6 +185,10 @@ tooltip {
     color: @yellow;
 }
 
+#privacy-item.audio-in {
+    color: @yellow;
+}
+
 
 /* ──── Temperature CPU ──── */
 #temperature.cpu:hover {

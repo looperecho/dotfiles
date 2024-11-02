@@ -30,8 +30,8 @@
 
     "modules-right": [
         "group/tray",
-        "group/audio",
         "privacy",
+        "group/audio",
         "bluetooth",
         "temperature#cpu",
         "custom/ibus",
