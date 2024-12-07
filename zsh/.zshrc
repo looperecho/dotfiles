@@ -15,8 +15,8 @@ alias e="$EDITOR"
 
 # ┌──── Paths 
 # ▼
-export PATH=/home/recoil/.repo/bin:$PATH
-export PATH=/home/recoil/.local/bin/appimages:$PATH
+export PATH=$HOME/.repo/bin:$PATH
+export PATH=$HOME/.local/bin/appimages:$PATH
 
 
 # ┌──── Load Keybindings 
