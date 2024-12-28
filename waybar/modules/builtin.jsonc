@@ -183,8 +183,26 @@
     // ────────
     // Time & Date
     // ────────
-    "clock": {
-        "format": "{:%a %d %B    %H:%M}",
+    "group/datetime": {
+        "orientation": "inherit",
+        "drawer": {
+            "transition-duration": 300,
+            "transition-left-to-right": false,
+            "click-to-reveal": true
+        },
+        "modules": [
+            "clock#time",
+            "clock#date"
+        ]
+    },
+
+    "clock#time": {
+        "format": "{:%H:%M}",
+        "tooltip": false
+    },
+
+    "clock#date": {
+        "format": "{:%a %d %B}",
         "tooltip": false
     }
 

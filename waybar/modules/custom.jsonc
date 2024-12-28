@@ -10,6 +10,18 @@
 
 
     // ────────
+    // GPU Temp
+    // ────────
+    "custom/gpu-temp": {
+        "exec": "~/.config/waybar/bin/gpu-temp.sh",
+        "interval": 1,
+        "format": "{}°C",
+        "tooltip": false,
+        "on-click": "firefox http://localhost:11987/ && hyprctl dispatch focuswindow firefox" // Opens cooler control
+    },
+
+
+    // ────────
     // Language input indicator
     // ────────
     "custom/ibus": {

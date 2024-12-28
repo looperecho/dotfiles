@@ -38,6 +38,7 @@ tooltip {
 #privacy,
 #bluetooth,
 #temperature,
+#custom-gpu-temp,
 #custom-ibus,
 #clock,
 #custom-notification {
@@ -191,7 +192,14 @@ tooltip {
 
 
 /* ──── Temperature CPU ──── */
-#temperature.cpu:hover {
+#temperature.cpu,
+#custom-gpu-temp {
+    font-family: "FiraCode Nerd Font";
+    font-weight: bold;
+}
+
+#temperature.cpu:hover,
+#custom-gpu-temp:hover {
     color: @tint;
 }
 

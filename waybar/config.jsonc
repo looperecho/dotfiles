@@ -21,7 +21,6 @@
     "modules-left": [
         "hyprland/workspaces",
         "hyprland/window"
-
     ],
 
     "modules-center": [
@@ -29,13 +28,14 @@
     ],
 
     "modules-right": [
+        "temperature#cpu",
+        "custom/gpu-temp",
         "group/tray",
         "privacy",
         "group/audio",
         "bluetooth",
-        "temperature#cpu",
         "custom/ibus",
-        "clock",
+        "group/datetime",
         "custom/notification"
     ]
 }
