@@ -4,12 +4,19 @@
     // Workspace Indicators
     // ────────
     "hyprland/workspaces": {
+        "all-outputs": true,
         "format": "{icon}",
         "on-click": "activate",
         "show-special": true,
         "format-icons": {
             "default": " ",
             "special": " "
+        },
+        "persistent-workspaces": {
+            "1": [],
+            "2": [],
+            "3": [],
+            "4": []
         },
         "sort-by-number": true
     },
