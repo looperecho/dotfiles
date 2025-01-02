@@ -4,7 +4,7 @@
     // Expand Tray Button
     // ────────
     "custom/expand-tray": {
-        "format": " ",
+        "format": "",
         "tooltip": false
     },
 

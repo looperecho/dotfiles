@@ -28,14 +28,12 @@
     ],
 
     "modules-right": [
-        "temperature#cpu",
-        "custom/gpu-temp",
-        "group/tray",
+        "group/group-tray",
         "privacy",
-        "group/audio",
+        "group/group-audio",
         "bluetooth",
         "custom/ibus",
-        "group/datetime",
+        "group/group-datetime",
         "custom/notification"
     ]
 }

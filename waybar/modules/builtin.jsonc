@@ -73,29 +73,33 @@
     // ────────
     // System Tray
     // ────────
-    "group/tray": {
+    "group/group-tray": {
         "orientation": "inherit",
         "drawer": {
             "transition-duration": 300,
             "transition-left-to-right": true,
-            "click-to-reveal": true
+            "click-to-reveal": true,
+            "children-class": "tray-icons"
         },
         "modules": [
             "custom/expand-tray",
+            "temperature#cpu",
+            "custom/gpu-temp",
             "tray"
         ]
     },
 
     "tray": {
         "spacing": 15,
-        "icon-size": 24
+        "icon-size": 24,
+        "show-passive-items": true
     },
 
 
     // ────────
     // Audio Group
     // ────────
-    "group/audio":  {
+    "group/group-audio":  {
         "orientation": "inherit",
         "drawer": {
             "transition-duration": 300,
@@ -183,7 +187,7 @@
     // ────────
     // Time & Date
     // ────────
-    "group/datetime": {
+    "group/group-datetime": {
         "orientation": "inherit",
         "drawer": {
             "transition-duration": 300,

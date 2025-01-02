@@ -11,7 +11,7 @@
 
 /* ──── Global Bar ──── */
 window#waybar {
-    background-color: alpha(@base, 0.0);
+    background-color: alpha(@tint, 0.0);
     border-radius: 0;
 }
 
@@ -33,15 +33,21 @@ tooltip {
 
 /* ──── General Module Style ──── */
 #mpris,
+#custom-expand-tray,
 #tray,
+#group-tray,
 #wireplumber,
 #privacy,
 #bluetooth,
 #temperature,
 #custom-gpu-temp,
+#group-audio,
 #custom-ibus,
+#group-datetime,
 #clock,
 #custom-notification {
+    transition: all 0.5s ease-in-out;
+    border-radius: 0.7em;
     color: @text;
     padding: 0 .6em;
 }
@@ -56,12 +62,16 @@ tooltip {
 }
 
 #workspaces button {
-    color: @text;
+    color: @tint;
     margin: 0;
-    padding: 0 0 0 0.3em;
-    opacity: 0.5;
+    padding: 0.1em 0 0 0.4em;
     background-color: alpha(@text, 0);
     transition: all 0.5s ease-out;
+}
+
+#workspaces button.empty {
+    color: @text;
+    opacity: 0.3;
 }
 
 #workspaces button.special {
@@ -69,14 +79,14 @@ tooltip {
 }
 
 #workspaces button.active {
+    color: @text;
     opacity: 1;
-    transition: all 0.5s ease-out;
+
 }
 
 #workspaces button:hover {
+    color: @text;
     opacity: 1;
-    color: @tint;
-    transition: none;
 }
 
 
@@ -88,10 +98,14 @@ tooltip {
     font-weight: 900;
 }
 
+window#waybar {
+    transition: all 1s ease-out;
+}
+
 
 /* ──── MPRIS ──── */
 #mpris.paused {
-    opacity: 0.5;
+    opacity: .5;
 }
 
 
@@ -108,12 +122,21 @@ tooltip {
 
 
 /* ──── Tray ──── */
-#custom-expand-tray:hover {
-    color: @tint;
+#custom-expand-tray {
+    opacity: .5;
 }
 
-#tray > .passive {
-    -gtk-icon-effect: dim;
+#custom-expand-tray:hover {
+    opacity: 1;
+}
+
+#group-tray {
+    background-color: alpha(@text, 0);
+    border-radius: .7em;
+}
+
+#group-tray:hover {
+    background-color: alpha(@base, .5);
 }
 
 #tray > .needs-attention {
@@ -127,7 +150,6 @@ tooltip {
 
 #tray menu menuitem {
     color: @text;
-    transition-property: background-color;
     transition-duration: 0.3s;
 }
 
@@ -136,16 +158,28 @@ tooltip {
 }
 
 
-/* ──── Wireplumber (Audio Icon) ──── */
-#wireplumber {
-        padding: 0 .2em 0 .6em;
+/* ──── Temperature CPU ──── */
+#temperature.cpu,
+#custom-gpu-temp {
+    padding-top: .2em;
+    font-family: "FiraCode Nerd Font";
+    font-weight: bold;
 }
 
+#temperature.cpu:hover,
+#custom-gpu-temp:hover {
+    color: @tint;
+}
+
+/* ──── Wireplumber (Audio Icon) ──── */
 #wireplumber:hover {
     color: @tint;
 }
 
 /* ──── PulseAudio Slider ──── */
+#pulseaudio-slider {
+    padding-left: 0;
+}
 #pulseaudio-slider slider {
     min-height: 0;
     min-width: 0;
@@ -172,14 +206,17 @@ tooltip {
 #pulseaudio {
     color: @text;
     min-width: 3em;
+    padding-right: .3em;
 }
 
 /* ──── Audio Drawer Group ──── */
-#audio {
-  background-color: alpha(@text, 0.1);
-  border-radius: .7em;
+#group-audio {
+    border-radius: .7em;
 }
 
+#group-audio:hover {
+    background-color: alpha(@text, 0.1);
+}
 
 /* ──── Privacy Icon ──── */
 #privacy-item.screenshare {
@@ -191,15 +228,16 @@ tooltip {
 }
 
 
-/* ──── Temperature CPU ──── */
-#temperature.cpu,
-#custom-gpu-temp {
-    font-family: "FiraCode Nerd Font";
-    font-weight: bold;
+/* ──── Clock ──── */
+#group-datetime:hover {
+    background-color: alpha(@base, 0.5);
 }
 
-#temperature.cpu:hover,
-#custom-gpu-temp:hover {
+#clock.date {
+    color: @tint;
+}
+
+#clock.time:hover {
     color: @tint;
 }
 
@@ -207,11 +245,11 @@ tooltip {
 /* ──── Notification (Swaync) ──── */
 #custom-notification {
     margin-right: .4em;
-    background-color: alpha(@text, 0.1);
     border-radius: .7em;
     padding: 0 .8em 0 .8em;
 }
 
 #custom-notification:hover {
     color: @tint;
+    background-color: alpha(@base, 0.1);
 }
