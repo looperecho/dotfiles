@@ -219,12 +219,9 @@ window#waybar {
 }
 
 /* ──── Privacy Icon ──── */
-#privacy-item.screenshare {
-    color: @yellow;
-}
-
+#privacy-item.screenshare,
 #privacy-item.audio-in {
-    color: @yellow;
+    color: alpha(@yellow, .8);
 }
 
 

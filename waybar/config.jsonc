@@ -30,8 +30,8 @@
     "modules-right": [
         "group/group-tray",
         "privacy",
-        "group/group-audio",
         "bluetooth",
+        "group/group-audio",
         "custom/ibus",
         "group/group-datetime",
         "custom/notification"
