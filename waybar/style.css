@@ -48,8 +48,8 @@ tooltip {
 #custom-notification {
     transition: all 0.5s ease-in-out;
     border-radius: 0.7em;
-    color: @text;
     padding: 0 .6em;
+    color: @text;
 }
 
 
@@ -57,7 +57,7 @@ tooltip {
 #workspaces {
     margin-left: .4em;
     border-radius: .7em;
-    padding: 0 .3em 0 .4em;
+    padding: 0 0 0 0;
     transition: all 0.5s ease-in-out;
 }
 
@@ -121,7 +121,7 @@ window#waybar {
 }
 
 
-/* ──── Tray ──── */
+/* ──── Tray Expand Icon ──── */
 #custom-expand-tray {
     opacity: .5;
 }
@@ -130,6 +130,7 @@ window#waybar {
     opacity: 1;
 }
 
+/* ──── Group Style ──── */
 #group-tray {
     background-color: alpha(@text, 0);
     border-radius: .7em;
@@ -137,6 +138,11 @@ window#waybar {
 
 #group-tray:hover {
     background-color: alpha(@base, .5);
+}
+
+/* ──── Tray Icons ──── */
+#tray {
+    opacity: .7;
 }
 
 #tray > .needs-attention {
@@ -155,6 +161,7 @@ window#waybar {
 
 #tray menu menuitem:hover {
     background-color: @tint;
+    color: @base;
 }
 
 
