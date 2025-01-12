@@ -21,7 +21,6 @@
         "sort-by-number": true
     },
 
-
     // ────────
     // Window Titles
     // ────────
@@ -77,7 +76,7 @@
         "orientation": "inherit",
         "drawer": {
             "transition-duration": 300,
-            "transition-left-to-right": true,
+            "transition-left-to-right": false,
             "click-to-reveal": true,
             "children-class": "tray-icons"
         },
