@@ -9,7 +9,7 @@ This is just a backup of my own personal linux configs.
 
 ## Utilities
 - [ZSH Shell](zsh)
-- [Alacritty](alacritty)
+- [WezTerm](wezterm)
 - [Neovim](nvim)
 - [Yazi](yazi)
 
