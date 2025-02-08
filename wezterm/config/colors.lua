@@ -1,17 +1,34 @@
 return function(config)
     -- Theme
     config.color_scheme = 'Pnevma'
+
+    -- Color Variables
+    local fg = '#9a9a9a'
+    local bg = '#1d1f21'
+    local bg_alpha = 'rgba(255,255,255,0.1)'
+    local transparent = 'rgba(0,0,0,0)'
+
     -- Overrides
     config.colors = {
-        background = '#282828',
-        foreground = '#9a9a9a',
+        foreground = fg,
+        background = bg,
 
         -- Tabs and splits
-        split = '#1a1a1a',
+        split = bg_alpha,
+
         tab_bar = {
+            background = bg_alpha,
             active_tab = {
-                fg_color = '#B6B6AA',
-                bg_color = '#282828',
+                fg_color = fg,
+                bg_color = transparent,
+            },
+            inactive_tab = {
+                fg_color = fg,
+                bg_color = bg_alpha,
+            },
+            new_tab = {
+                fg_color = fg,
+                bg_color = bg_alpha,
             },
         },
     }
