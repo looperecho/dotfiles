@@ -4,7 +4,7 @@ return function(config)
 
     -- Color Variables
     local fg = '#9a9a9a'
-    local bg = '#1d1f21'
+    local bg = '#1a2023'
     local bg_alpha = 'rgba(255,255,255,0.1)'
     local transparent = 'rgba(0,0,0,0)'
 
