@@ -25,8 +25,10 @@
     // Language input indicator
     // ────────
     "custom/ibus": {
-        "exec": "~/.config/waybar/bin/ibus.sh",
-        "interval": 1,
+        "exec": "cat /tmp/current_input_method || echo 'EN'",
+        "interval": "once",
+        "signal": 1,
+        "format": "{}",
         "tooltip": false
     },
 
