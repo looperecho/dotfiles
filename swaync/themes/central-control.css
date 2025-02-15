@@ -1,11 +1,9 @@
 * {
     color: @text;
-
     all: unset;
     font-size: 18px;
     font-family: "Inter";
     transition: 200ms;
-
 }
 
 /* Avoid 'annoying' backgroud */
@@ -83,16 +81,6 @@
     background-color: @tint;
 }
 
-progressbar,
-progress,
-trough {
-    border-radius: 12px;
-}
-
-progressbar {
-    background-color: rgba(255,255,255,.1);
-}
-
 /* Notifications expanded-group */
 
 .notification-group {
@@ -101,7 +89,7 @@ progressbar {
 }
 .notification-group-headers {
     font-weight: bold;
-    font-size: 1.25rem;
+    font-size: 1.2rem;
     color: @text;
     letter-spacing: 2px;
 }
@@ -148,116 +136,30 @@ progressbar {
     background-color: @tint;
 }
 
-/* Do not disturb */
-.widget-dnd {
-    color: @text;
-    font-size: 2em;
-    margin: 6px;
-}
-
-.widget-dnd > switch {
-    background: @mixed;
-    font-size: initial;
-    border-radius: 8px;
-    box-shadow: none;
-    padding: 2px;
-}
-
-.widget-dnd > switch:hover {
-    background: @tint;
-}
-
-.widget-dnd > switch:checked {
-    background: @tint;
-}
-
-.widget-dnd > switch:checked:hover {
-    background: @tint;
-}
-
-.widget-dnd > switch slider {
-    background: @text;
-        border-radius: 6px;
-}
-
 /* Buttons menu */
 .widget-buttons-grid {
     color: @text;
     padding: 0;
     margin: 6px;
-    border-radius: 12px;
+    border-radius: 1em;
+    background: transparent;
+}
+
+.widget-buttons-grid > flowbox > flowboxchild > button {
+    margin: 6px;
+    min-width: 68px;
+    min-height: 24px;
+    padding: 12px;
+    border-radius: 1em;
     background: @base;
 }
 
-.widget-buttons-grid>flowbox>flowboxchild>button {
-    margin: 6px;
-    padding: 6px 26px;
-    background: transparent;
-    border-radius: 12px;
-}
-
-.widget-buttons-grid>flowbox>flowboxchild>button:hover {
+.widget-buttons-grid > flowbox > flowboxchild > button:hover {
     color: @tint;
+    background: alpha(@text, 0.1);
 }
 
-.widget-buttons-grid>flowbox>flowboxchild>button:checked {
+.widget-buttons-grid > flowbox > flowboxchild > button:checked {
     color: @base;
     background: @text;
-}
-
-..widget-buttons-grid>flowbox>flowboxchild>text-button-toggle {
-    color: @tint;
-}
-
-/* Music player */
-.widget-mpris {
-    background: @mixed;
-    border-radius: 12px;
-    color: @text;
-    margin:  20px 6px;
-}
-
-
-/* NOTE: Background need *opacity 1* otherwise will turn into the album art blurred  */
-.widget-mpris-player {
-    background-color: @mixed;
-    border-radius: 12px;
-    padding: 14px 14px;
-    margin: 6px;
-}
-
-.widget-mpris > box > button {
-    color: @text;
-    border-radius: 20px;
-}
-
-.widget-mpris button {
-    color: alpha(@text, .6);
-}
-
-.widget-mpris button:hover {
-    color: @text;
-}
-
-.widget-mpris-album-art {
-    border-radius: 12px;
-}
-
-.widget-mpris-title {
-    font-weight: 700;
-    font-size: 1rem;
-}
-
-.widget-mpris-subtitle {
-    font-weight: 500;
-    font-size: 0.8rem;
-}
-
-/* Volume */
-.widget-volume {
-    background: @green;
-    color: @red;
-    padding: 4px;
-    margin: 6px;
-    border-radius: 6px;
 }
