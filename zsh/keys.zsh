@@ -13,5 +13,5 @@ bindkey -v
 # bindkey "^[" history-search-backward
 # bindkey "^]" history-search-forward
 #
-# # Auto Suggest
-# bindkey "^p" autosuggest-accept
+# Auto Suggest
+bindkey "^ " autosuggest-accept
