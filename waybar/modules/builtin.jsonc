@@ -30,7 +30,8 @@
             "Loading...": "Files",
             "Spotify (.*)": "Spotify",
             "Ulauncher(.*)": "Launcher",
-            "wezterm": "WezTerm"
+            "wezterm": "WezTerm",
+            "Vivaldi(.*)": "Vivaldi"
         },
         "separate-outputs": true,
         "icon": false
