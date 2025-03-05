@@ -25,13 +25,12 @@
     // Window Titles
     // ────────
     "hyprland/window": {
-        "format": "{initialTitle}",
+        "format": "{initialClass}",
         "rewrite": {
-            "Loading...": "Files",
-            "Spotify (.*)": "Spotify",
-            "Ulauncher(.*)": "Launcher",
-            "wezterm": "WezTerm",
-            "Vivaldi(.*)": "Vivaldi"
+            "firefox": "Firefox",
+            "(.*)ghostty": "Ghostty",
+            "(.*)wezterm": "Wezterm",
+            "(.*)Nautilus": "Files"
         },
         "separate-outputs": true,
         "icon": false
