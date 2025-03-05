@@ -11,7 +11,7 @@
 
 /* ──── Global Bar ──── */
 window#waybar {
-    background-color: alpha(@tint, 0.0);
+    background-color: alpha(@tint, 0);
     border-radius: 0;
 }
 
@@ -20,8 +20,10 @@ tooltip * {
     color: @text;
     text-shadow: none;
 }
-tooltip {
-    background-color: @mixed;
+tooltop {
+    border: none;
+    border-radius: 12px;
+    background-color: alpha(@black, .8);
 }
 
 /* ──── Global Modules ──── */
@@ -62,7 +64,7 @@ tooltip {
 }
 
 #workspaces button {
-    color: @tint;
+    color: @text;
     margin: 0;
     padding: 0.1em 0 0 0.4em;
     background-color: alpha(@text, 0);
@@ -75,17 +77,17 @@ tooltip {
 }
 
 #workspaces button.special {
-    color: @tint;
+    color: @text;
 }
 
 #workspaces button.active {
-    color: @text;
+    color: alpha(@tint, .8);
     opacity: 1;
 
 }
 
 #workspaces button:hover {
-    color: @text;
+    color: @yellow;
     opacity: 1;
 }
 
@@ -137,7 +139,7 @@ window#waybar {
 }
 
 #group-tray:hover {
-    background-color: alpha(@base, .5);
+    background-color: alpha(@black, .5);
 }
 
 /* ──── Tray Icons ──── */
@@ -191,7 +193,7 @@ window#waybar {
     min-height: 0;
     min-width: 0;
     opacity: 0;
-    background-color: alpha(@text, 0);
+    background-color: alpha(@white, 0);
     box-shadow: none;
     color: @text;
 }
@@ -200,7 +202,7 @@ window#waybar {
     min-height: .5em;
     min-width: 6em;
     border-radius: .3em;
-    background-color: alpha(@base, 0.5);
+    background-color: alpha(@black, 0.5);
 }
 
 #pulseaudio-slider highlight {
@@ -234,11 +236,11 @@ window#waybar {
 
 /* ──── Clock ──── */
 #group-datetime:hover {
-    background-color: alpha(@base, 0.5);
+    background-color: alpha(@black, 0.5);
 }
 
 #clock.date {
-    color: @tint;
+    color: alpha(@tint, .8);
 }
 
 #clock.time:hover {
@@ -255,5 +257,5 @@ window#waybar {
 
 #custom-notification:hover {
     color: @tint;
-    background-color: alpha(@base, 0.1);
+    background-color: alpha(@black, 0.5);
 }
