@@ -1,0 +1,22 @@
+
+/*
+Pnevma Theme
+*/
+@define-color white     #D0D0D0;
+@define-color black     #000000;
+@define-color yellow    #D7AF87;
+@define-color green     #90A57D;
+@define-color blue      #7FA5BD;
+@define-color red       #A36666;
+
+@define-color tint      @blue;
+@define-color base      #1c1c1c;
+@define-color text      #9a9a9a;
+@define-color mixed     #333C3D;
+
+@define-color base1     #3C3C3C;
+@define-color base2     #686868;
+@define-color base3     #989898;
+@define-color tint1     @blue;
+@define-color text1     #CCCCCC;
+
