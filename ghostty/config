@@ -1,0 +1,14 @@
+# Ghostty terminal config
+# .repo/ghostty/config
+
+# Theme
+theme = Pnevma
+# background = 1a2023
+foreground = 9a9a9a
+background-opacity = .95
+window-padding-balance = true
+window-padding-color = background
+window-theme = ghostty
+
+# Keybinds
+keybind = ctrl+w=close_surface
