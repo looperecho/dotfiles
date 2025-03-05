@@ -7,7 +7,7 @@ This is just a backup of my own personal linux configs.
     - Set workspaces for common apps
     - Special workspace for spotify and comms
     - Float and centre window for focus
-- **[Waybar](waybar)** - Status Bar
+- **[Waybar](waybar)** - Status Bar  
     - iBus input method status
     - Expandable volume icon, with slider
     - Expandable clock to show date
@@ -38,7 +38,9 @@ Monitor hardware temperatures and set fan curves
 - **[Uauncher](https://github.com/Ulauncher/Ulauncher/)**  
 Application launcher with plugins
 
-
-
 # Preview
+Waybar Functions  
+![Waybar Preview](images/waybar.webp)  
 
+Hyprland  
+![Main Preview](images/preview.webp)
