@@ -9,7 +9,7 @@
 .notification-row {
     outline: none;
     margin: 0;
-    padding: 0px;
+    padding: 0;
 }
 
 .close-button {
@@ -17,21 +17,23 @@
 }
 
 .floating-notifications.background .notification-row .notification-background {
-    background: @base0;
+    background: @black;
     box-shadow: none;
-    border: none;
-    border-radius: 12px;
+    border-radius: 10px;
     margin: 16px;
     padding: 0;
 }
 
 .floating-notifications.background .notification-row .notification-background .notification {
+    border-radius: 10px;
+    border-right: 10px solid alpha(@tint, .5);
     padding: 6px;
-    border-radius: 12px;
 }
 
 .floating-notifications.background .notification-row .notification-background .notification.critical {
-    border: 2px solid @yellow;
+    border-radius: 10px;
+    border-right: 10px solid @yellow;
+    padding: 6px;
 }
 
 .floating-notifications.background .notification-row .notification-background .notification .notification-content {
@@ -61,6 +63,8 @@
 
 .image {
     margin: 10px 20px 10px 0px;
+        min-width: 40px;
+        min-height: 40px;
     color: @text;
 }
 
@@ -76,19 +80,20 @@
 }
 
 .floating-notifications.background .notification-row .notification-background .close-button {
-    margin: 6px;
+    margin: 0px 340px 0px 0px;
     padding: 2px;
-    border-radius: 6px;
+    border-radius: 18px;
     background-color: transparent;
     border: none;
 }
 
 .floating-notifications.background .notification-row .notification-background .close-button:hover {
-    background-color: @tint;
+    background-color: @red;
+    color: @base;
 }
 
 .floating-notifications.background .notification-row .notification-background .close-button:active {
-    background-color: @tint;
+    background-color: alpha(@text, .5);
     color: @text;
 }
 
@@ -103,5 +108,5 @@
 
 .notification-icon {
     background-color: @text;
-    color: #ff5733; /* Change this to your preferred color */
+    color: @base;
 }
