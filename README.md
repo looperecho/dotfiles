@@ -32,13 +32,13 @@ https://github.com/user-attachments/assets/d480d66c-e24e-4748-942a-243fcd843233
 - **[ghostty](https://github.com/ghostty-org/ghostty)** - Terminal Emulator  
     [config](ghostty)
     - Minimal configuration
-- **[Neovim](https://github.com/neovim/neovim)** - Editor
+- **[Neovim](https://github.com/neovim/neovim)** - Editor  
     [config](nvim)
     - Lazy plugin manager
     - Telescope search
     - cmp snippets
     - Jedi LS, ruff, flake8 lint
-- **[Yazi](https://github.com/sxyazi/yazi)** - File Browser
+- **[Yazi](https://github.com/sxyazi/yazi)** - File Browser  
     [config](yazi)
 
 ## Recommended
