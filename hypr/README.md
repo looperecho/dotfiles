@@ -8,7 +8,7 @@ Define Modifier Keys
 
 Keybind Table  
 | Modifier      | Key                           | Action                            |
-| ------------- | :------------                 | :----------------                 |
+| :------------ | :------------                 | :----------------                 |
 | **General**   |
 | `MEH`         | `q`                           | Killactive                        |
 | `MEH`         | `b`                           | Reload Waybar                     |
