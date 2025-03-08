@@ -28,6 +28,8 @@
         "format": "{initialClass}",
         "rewrite": {
             "firefox": "Firefox",
+            "zen": "Zen",
+            "steam": "Steam",
             "(.*)ghostty": "Ghostty",
             "(.*)wezterm": "Wezterm",
             "(.*)Nautilus": "Files"
@@ -84,7 +86,8 @@
             "custom/expand-tray",
             "temperature#cpu",
             "custom/gpu-temp",
-            "tray"
+            "tray",
+            "custom/ibus"
         ]
     },
 
@@ -138,7 +141,7 @@
     "wireplumber": {
         "format": "{icon}",
         "format-muted": "",
-        "format-icons": [" ", " ", " "],
+        "format-icons": ["", "", ""],
         "scroll-step": 5.0,
         "tooltip-format": "{node_name} | {volume}%"
     },
