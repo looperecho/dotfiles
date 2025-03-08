@@ -50,7 +50,7 @@ tooltop {
 #custom-notification {
     transition: all 0.5s ease-in-out;
     border-radius: 0.7em;
-    padding: 0 .6em;
+    padding: 0 .5em;
     color: @text;
 }
 
@@ -125,6 +125,7 @@ window#waybar {
 
 /* ──── Tray Expand Icon ──── */
 #custom-expand-tray {
+    padding-right: .5em;
     opacity: .5;
 }
 
@@ -132,8 +133,13 @@ window#waybar {
     opacity: 1;
 }
 
+#custom-expand-tray.active {
+    color: @tint;
+}
+
 /* ──── Group Style ──── */
 #group-tray {
+    margin-left: .5em;
     background-color: alpha(@text, 0);
     border-radius: .7em;
 }
@@ -175,9 +181,12 @@ window#waybar {
     font-weight: bold;
 }
 
-#temperature.cpu:hover,
-#custom-gpu-temp:hover {
+#temperature.cpu:hover {
     color: @tint;
+}
+
+#custom-gpu-temp:hover {
+    color: @green;
 }
 
 /* ──── Wireplumber (Audio Icon) ──── */
@@ -189,6 +198,7 @@ window#waybar {
 #pulseaudio-slider {
     padding-left: 0;
 }
+
 #pulseaudio-slider slider {
     min-height: 0;
     min-width: 0;
@@ -220,6 +230,7 @@ window#waybar {
 
 /* ──── Audio Drawer Group ──── */
 #group-audio {
+    margin-left: .5em;
     border-radius: .7em;
 }
 
@@ -230,9 +241,14 @@ window#waybar {
 /* ──── Privacy Icon ──── */
 #privacy-item.screenshare,
 #privacy-item.audio-in {
+    margin-left: .5em;
     color: alpha(@yellow, .8);
 }
 
+/* ──── ibus ──── */
+#custom-ibus {
+    margin: 0 .5em;
+}
 
 /* ──── Clock ──── */
 #group-datetime:hover {
@@ -247,10 +263,10 @@ window#waybar {
     color: @tint;
 }
 
-
 /* ──── Notification (Swaync) ──── */
 #custom-notification {
     margin-right: .4em;
+    margin-left: .5em;
     border-radius: .7em;
     padding: 0 .8em 0 .8em;
 }
