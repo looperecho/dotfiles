@@ -59,7 +59,7 @@ tooltop {
 #workspaces {
     margin-left: .4em;
     border-radius: .7em;
-    padding: 0 0 0 0;
+    padding: 0;
     transition: all 0.5s ease-in-out;
 }
 
@@ -95,9 +95,8 @@ tooltop {
 /* ──── Window Title ──── */
 #window * {
     color: @text;
-    padding: 0;
-    margin-left: .8em;
-    font-weight: 900;
+    margin: 0 1em;
+    font-weight: 600;
 }
 
 window#waybar {
@@ -139,13 +138,16 @@ window#waybar {
 
 /* ──── Group Style ──── */
 #group-tray {
-    margin-left: .5em;
-    background-color: alpha(@text, 0);
-    border-radius: .7em;
+    margin: 0 .25em;
 }
 
 #group-tray:hover {
     background-color: alpha(@black, .5);
+}
+
+/* ──── ibus ──── */
+#custom-ibus {
+    margin: 0 .5em;
 }
 
 /* ──── Tray Icons ──── */
@@ -181,13 +183,19 @@ window#waybar {
     font-weight: bold;
 }
 
-#temperature.cpu:hover {
-    color: @tint;
+#temperature.cpu:hover,
+#custom-gpu-temp:hover {
+    color: @text;
 }
 
-#custom-gpu-temp:hover {
+#temperature.cpu {
+    color: @blue;
+}
+
+#custom-gpu-temp {
     color: @green;
 }
+
 
 /* ──── Wireplumber (Audio Icon) ──── */
 #wireplumber:hover {
@@ -230,27 +238,27 @@ window#waybar {
 
 /* ──── Audio Drawer Group ──── */
 #group-audio {
-    margin-left: .5em;
-    border-radius: .7em;
+    margin: 0 .25em;
 }
 
 #group-audio:hover {
     background-color: alpha(@text, 0.1);
 }
 
+
 /* ──── Privacy Icon ──── */
 #privacy-item.screenshare,
 #privacy-item.audio-in {
-    margin-left: .5em;
+    margin: 0 .25em;
     color: alpha(@yellow, .8);
 }
 
-/* ──── ibus ──── */
-#custom-ibus {
-    margin: 0 .5em;
-}
 
 /* ──── Clock ──── */
+#group-datetime {
+    margin: 0 0.25em;
+}
+
 #group-datetime:hover {
     background-color: alpha(@black, 0.5);
 }
@@ -266,7 +274,7 @@ window#waybar {
 /* ──── Notification (Swaync) ──── */
 #custom-notification {
     margin-right: .4em;
-    margin-left: .5em;
+    margin-left: .25em;
     border-radius: .7em;
     padding: 0 .8em 0 .8em;
 }
