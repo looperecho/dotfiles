@@ -111,6 +111,10 @@ window#waybar {
 
 
 /* ──── Bluetooth ──── */
+#bluetooth {
+    margin: .25em;
+}
+
 #bluetooth.disabled {
     color: alpha(@text, 0.5);
 }
