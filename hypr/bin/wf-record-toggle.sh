@@ -2,7 +2,7 @@
 # Toggle Script for wf-recorder
 
 PID_FILE="/tmp/wf-record.pid"
-OUTPUT_FILE="$HOME/Pictures/Screenshots/screen_record_$(date +'%Y-%m-%d_%H-%M-%S').mp4"
+OUTPUT_FILE="$HOME/Pictures/Captures/$(date +'%Y-%m-%d_%H-%M').mp4"
 
 if [[ -f "$PID_FILE" ]]; then
     # wf-recorder is running, so stop it
