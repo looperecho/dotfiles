@@ -58,8 +58,9 @@ tooltop {
 /* ──── Workspaces ──── */
 #workspaces {
     margin-left: .4em;
-    border-radius: .7em;
-    padding: 0;
+    border-radius: 1em;
+    background-color: alpha(@black, .3);
+    padding: 0 .5em;
     transition: all 0.5s ease-in-out;
 }
 
@@ -146,7 +147,7 @@ window#waybar {
 }
 
 #group-tray:hover {
-    background-color: alpha(@black, .5);
+    background-color: alpha(@black, .3);
 }
 
 /* ──── ibus ──── */
@@ -224,7 +225,7 @@ window#waybar {
     min-height: .5em;
     min-width: 6em;
     border-radius: .3em;
-    background-color: alpha(@black, 0.5);
+    background-color: alpha(@black, .3);
 }
 
 #pulseaudio-slider highlight {
@@ -264,7 +265,7 @@ window#waybar {
 }
 
 #group-datetime:hover {
-    background-color: alpha(@black, 0.5);
+    background-color: alpha(@black, .3);
 }
 
 #clock.date {
@@ -285,5 +286,5 @@ window#waybar {
 
 #custom-notification:hover {
     color: @tint;
-    background-color: alpha(@black, 0.5);
+    background-color: alpha(@black, .3);
 }
