@@ -11,26 +11,28 @@
 
 /* ──── Global Bar ──── */
 window#waybar {
-    background-color: alpha(@tint, 0);
+    background-color: alpha(@blue, 0);
     border-radius: 0;
 }
 
 /* ──── Global Tooltip ──── */
-tooltip * {
-    color: @text;
+tooltip  {
+    background: transparent;
+    border: none;
     text-shadow: none;
 }
-tooltop {
-    border: none;
-    border-radius: 12px;
-    background-color: alpha(@black, .8);
+tooltip label{
+    color: @text;
+    border-radius: .3em;
+    padding: .5em;
+    background-color: alpha(@base, .9);
 }
 
 /* ──── Global Modules ──── */
 .modules-left,
 .modules-center,
 .modules-right {
-    padding: .5em .7em;
+    padding: .5em .7em 0;
 }
 
 /* ──── General Module Style ──── */
@@ -152,13 +154,15 @@ window#waybar {
 
 /* ──── ibus ──── */
 #custom-ibus {
-    margin: 0 .5em;
+    margin: 0 .25em;
 }
 
 /* ──── Tray Icons ──── */
 #tray {
+    margin: 0 .25em;
     opacity: .7;
 }
+
 
 #tray > .needs-attention {
     -gtk-icon-effect: highlight;
@@ -183,6 +187,7 @@ window#waybar {
 /* ──── Temperature CPU ──── */
 #temperature.cpu,
 #custom-gpu-temp {
+    margin: 0 .25em;
     padding-top: .2em;
     font-family: "FiraCode Nerd Font";
     font-weight: bold;
