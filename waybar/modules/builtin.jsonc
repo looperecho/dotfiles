@@ -35,7 +35,8 @@
             "(.*)Nautilus": "Files"
         },
         "separate-outputs": true,
-        "icon": false
+        "icon": false,
+        "tooltip": false
     },
 
 
@@ -79,7 +80,7 @@
         "drawer": {
             "transition-duration": 300,
             "transition-left-to-right": false,
-            "click-to-reveal": true,
+            "click-to-reveal": false,
             "children-class": "tray-icons"
         },
         "modules": [
@@ -92,7 +93,7 @@
     },
 
     "tray": {
-        "spacing": 15,
+        "spacing": 25,
         "icon-size": 24,
         "show-passive-items": true
     },
@@ -106,7 +107,7 @@
         "drawer": {
             "transition-duration": 300,
             "transition-left-to-right": true,
-            "click-to-reveal": true
+            "click-to-reveal": false
         },
         "modules": [
             "wireplumber", // Icon
@@ -129,7 +130,9 @@
         },
         "scroll-step": 5.0,
         "on-click-right": "pavucontrol",
-        "on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
+        "on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
+        "tooltip": true,
+        "tooltip-format": "Toggle Mute" 
     },
 
     "pulseaudio/slider": {
