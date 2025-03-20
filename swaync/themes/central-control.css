@@ -14,20 +14,23 @@
 /* CONTROL CENTER ------------------------------------------------------------------------ */
 .control-center {
     color: @text;
-    background: alpha(@black, .8);
+    background: alpha(@black, .2);
     border-radius: 10px;
     border: none;
     margin: 11px;
     padding: 12px;
 }
 
+.control-center-list-placeholder {
+    color: transparent;
+}
+
 /* Notifications  */
 .control-center .notification-row .notification-background {
     color: @text;
-    background-color: @black;
+    background-color: alpha(@black, .8);
     border-radius: 10px;
-    box-shadow: 5px 5px alpha(@base, .2);
-    margin:  16px;
+    margin: 12px 6px;
     padding: 0;
 }
 
@@ -49,7 +52,7 @@
 
 /* Buttons */
 .control-center .notification-row .notification-background .close-button {
-    margin: 0px 340px 0px 0px;
+    margin: 0px 383px 0px 0px;
     padding: 2px;
     border-radius: 18px;
     background-color: transparent;
@@ -83,7 +86,7 @@
 
 /* Notifications expanded-group */
 .notification-group {
-    margin: 14px;
+    margin: 6px;
 
 }
 .notification-group-headers {
@@ -152,12 +155,12 @@
     min-height: 24px;
     padding: 12px;
     border-radius: 1em;
-    background: @base;
+    background: @black;
 }
 
 .widget-buttons-grid > flowbox > flowboxchild > button:hover {
     color: @tint;
-    background: alpha(@text, 0.1);
+    background: @base;
 }
 
 .widget-buttons-grid > flowbox > flowboxchild > button:checked {
