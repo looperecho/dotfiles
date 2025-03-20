@@ -55,7 +55,7 @@
     // Audio Player
     // ────────
     "mpris": {
-        "player": "playerctld",
+        "player": "spotify",
         "format": "{player_icon}  {artist} - {title}",
         "format-paused": "{status_icon}  {artist} - {title}",
         "player-icons": {
