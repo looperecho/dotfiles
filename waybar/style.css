@@ -61,7 +61,6 @@ tooltip label{
 #workspaces {
     margin-left: .4em;
     border-radius: 1em;
-    background-color: alpha(@black, .3);
     padding: 0 .5em;
     transition: all 0.5s ease-in-out;
 }
