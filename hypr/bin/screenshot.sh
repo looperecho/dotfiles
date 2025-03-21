@@ -9,13 +9,15 @@ file_name=$(basename ${file_path})
 # Function to notify after swappy
 swappy_notify() {
     if [ -f $file_path ]; then
-        notify-send -u normal
+        notify-send -u normal \
+            -a "Captures" \
             -i $file_path \
             "Screenshot" \
             "Saved as: \n$file_name"
 
-    elif [[ $(wl-paste -l) == "image/png" ]]; then
+    elif [ $(wl-paste -l) == "image/png" ]; then
         notify-send -u low \
+            -a "Captures" \
             -i desktop-symbolic \
             -h boolean:transient:true \
             "Screenshot" \
