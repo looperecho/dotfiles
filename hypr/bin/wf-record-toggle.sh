@@ -12,6 +12,7 @@ if [[ -f "$PID_FILE" ]]; then
     notify-send \
         "Recording Stopped" \
         "Saved to Screenshots folder." \
+        -a "Captures" \
         -i media-playback-stop-symbolic
 else
     # Start wf-recorder
@@ -23,6 +24,7 @@ else
     notify-send \
         "Screen Recording" \
         "Recording started..." \
+        -a "Captures" \
         -i media-record-symbolic \
         -u critical
 fi
