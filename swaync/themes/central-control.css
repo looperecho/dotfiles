@@ -14,7 +14,7 @@
 /* CONTROL CENTER ------------------------------------------------------------------------ */
 .control-center {
     color: @text;
-    background: alpha(@black, .2);
+    background: alpha(@text, .0);
     border-radius: 10px;
     border: none;
     margin: 11px;
@@ -28,16 +28,18 @@
 /* Notifications  */
 .control-center .notification-row .notification-background {
     color: @text;
-    background-color: alpha(@black, .8);
     border-radius: 10px;
-    margin: 12px 6px;
+    margin: 0;
     padding: 0;
 }
 
 .control-center .notification-row .notification-background .notification {
     border-radius: 10px;
+    border: 1px solid alpha(@text, .2);
     border-right: 10px solid alpha(@tint, .5);
+    background-color: alpha(@black, .8);
     padding: 6px;
+    margin: 6px;
 }
 
 .control-center .notification-row .notification-background .notification.critical {
@@ -52,15 +54,14 @@
 
 /* Buttons */
 .control-center .notification-row .notification-background .close-button {
-    margin: 0px 383px 0px 0px;
-    padding: 2px;
+    margin: -2px 396px 0 0;
+    padding: 2px 2px;
     border-radius: 18px;
-    background-color: transparent;
     border: none;
+    background-color: alpha(@text, .5);
 }
 
 .control-center .notification-row .notification-background .close-button:hover {
-    background-color: alpha(@text, .5);
     color: @text;
 }
 
@@ -69,8 +70,9 @@
 }
 
 .notification-group-close-all-button {
-    padding: 2px;
-    border-radius: 18px;
+    margin: 4px 12px; 
+    padding: 4px 20px;
+    border-radius: 10px;
     background-color: transparent;
     border: none;
 }
@@ -93,19 +95,18 @@
     font-weight: bold;
     font-size: 1.2rem;
     color: @text;
-    letter-spacing: 2px;
 }
 
 .notification-group-icon {
-    color: @text;
+    color: transparent;
 }
 
 .notification-group-collapse-button {
+    margin: 4px; 
+    padding: 4px 20px;
+    border-radius: 10px;
     background: transparent;
     color: @text;
-    margin: 4px; 
-    border-radius: 6px;
-    padding: 4px;
 }
 
 .notification-group-collapse-button:hover {
