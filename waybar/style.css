@@ -286,7 +286,14 @@ window#waybar {
     margin-right: .4em;
     margin-left: .25em;
     border-radius: .7em;
-    padding: 0 .8em 0 .8em;
+    padding: .1em .8em 0 .8em;
+}
+
+#custom-notification.notification,
+#custom-notification.dnd-notification,
+#custom-notification.inhibited-notification,
+#custom-notification.dnd-inhibited-notification {
+    color: @red;
 }
 
 #custom-notification:hover {
