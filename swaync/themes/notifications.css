@@ -1,5 +1,6 @@
 * {
     color: @text;
+    all: unset;
     font-size: 14px;
     font-family: "Inter";
     transition: 200ms;
@@ -8,7 +9,7 @@
 
 .notification-row {
     outline: none;
-    margin: 0;
+    margin: 0px 0px;
     padding: 0;
 }
 
@@ -17,17 +18,20 @@
 }
 
 .floating-notifications.background .notification-row .notification-background {
-    background: @black;
-    box-shadow: none;
+    color: @text;
     border-radius: 10px;
-    margin: 16px;
-    padding: 0;
+    margin-right: 20px;
+    margin-top: 20px;
+    padding: 6px;
 }
 
 .floating-notifications.background .notification-row .notification-background .notification {
     border-radius: 10px;
+    border: 1px solid alpha(@text, .2);
     border-right: 10px solid alpha(@tint, .5);
+    background-color: alpha(@black, .8);
     padding: 6px;
+    margin: 6px;
 }
 
 .floating-notifications.background .notification-row .notification-background .notification.critical {
@@ -80,21 +84,19 @@
 }
 
 .floating-notifications.background .notification-row .notification-background .close-button {
-    margin: 0px 340px 0px 0px;
-    padding: 2px;
+    margin: -2px 424px 0 0;
+    padding: 2px 2px;
     border-radius: 18px;
-    background-color: transparent;
     border: none;
+    background-color: alpha(@text, .5);
 }
 
 .floating-notifications.background .notification-row .notification-background .close-button:hover {
-    background-color: @red;
-    color: @base;
+    color: @text;
 }
 
 .floating-notifications.background .notification-row .notification-background .close-button:active {
-    background-color: alpha(@text, .5);
-    color: @text;
+    background-color: @red;
 }
 
 .notification.critical progress {
