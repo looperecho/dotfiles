@@ -4,6 +4,10 @@ require("recoil.keymaps")
 -- Load Lazy
 require("recoil.lazy")
 
+-- Set Title
+vim.o.title = true
+vim.o.titlestring = "Neovim - %{expand('%:t')}"
+
 -- Theme
 vim.cmd.colorscheme("hybrid")
 
