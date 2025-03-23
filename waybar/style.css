@@ -4,9 +4,6 @@
 
 /* ──── Global fonts ──── */
 * {
-    font-family: 'Inter';
-    font-weight: 600;
-    font-size: 18px;
 }
 
 /* ──── Global Bar ──── */
@@ -26,6 +23,7 @@ tooltip label{
     border-radius: .3em;
     padding: .5em;
     background-color: alpha(@base, .9);
+    border: 1px solid alpha(@text, .2);
 }
 
 /* ──── Global Modules ──── */
@@ -36,6 +34,7 @@ tooltip label{
 }
 
 /* ──── General Module Style ──── */
+#window,
 #mpris,
 #custom-expand-tray,
 #tray,
@@ -50,6 +49,9 @@ tooltip label{
 #group-datetime,
 #clock,
 #custom-notification {
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 18px;
     transition: all 0.5s ease-in-out;
     border-radius: 0.7em;
     padding: 0 .5em;
@@ -61,7 +63,7 @@ tooltip label{
 #workspaces {
     margin-left: .4em;
     border-radius: 1em;
-    padding: 0 .5em;
+    margin: 0 .5em;
     transition: all 0.5s ease-in-out;
 }
 
@@ -95,14 +97,24 @@ tooltip label{
 
 
 /* ──── Window Title ──── */
-#window * {
-    color: @text;
-    margin: 0 1em;
-    font-weight: 600;
-}
-
 window#waybar {
     transition: all 1s ease-out;
+}
+
+/* App Name */
+#window {
+    color: @text;
+    font-weight: 700;
+    margin: 0 .25em;
+}
+
+/* Title */
+#window.title {
+    color: alpha(@text, .8);
+    font-family: "Inter";
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
 }
 
 
@@ -207,13 +219,17 @@ window#waybar {
 
 
 /* ──── Wireplumber (Audio Icon) ──── */
+#wireplumber {
+    margin: 0 .25em;
+}
+
 #wireplumber:hover {
     color: @tint;
 }
 
 /* ──── PulseAudio Slider ──── */
 #pulseaudio-slider {
-    padding-left: 0;
+    margin: 0.25em;
 }
 
 #pulseaudio-slider slider {
@@ -268,24 +284,17 @@ window#waybar {
     margin: 0 0.25em;
 }
 
-#group-datetime:hover {
-    background-color: alpha(@black, .3);
-}
-
-#clock.date {
-    color: alpha(@tint, .8);
-}
-
-#clock.time:hover {
-    color: @tint;
-}
 
 /* ──── Notification (Swaync) ──── */
 #custom-notification {
-    margin-right: .4em;
+    margin-right: 1em;
     margin-left: .25em;
     border-radius: .7em;
-    padding: .1em .8em 0 .8em;
+    padding: .1em .8em 0 .4em;
+}
+
+#custom-notification.dnd-none {
+    color: alpha(@text, .5);
 }
 
 #custom-notification.notification,
