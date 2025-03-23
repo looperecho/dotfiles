@@ -37,7 +37,7 @@
     border-radius: 10px;
     border: 1px solid alpha(@text, .2);
     border-right: 10px solid alpha(@tint, .5);
-    background-color: alpha(@black, .8);
+    background-color: alpha(@black, .9);
     padding: 6px;
     margin: 6px;
 }
@@ -69,11 +69,32 @@
     background-color: @red;
 }
 
+
+/* Notifications expanded-group */
+.notification-group {
+    padding-top: 6px;
+    margin: 6px;
+}
+
+.notification-group-icon {
+    color: transparent;
+}
+
+.notification-group-headers {
+    font-weight: bold;
+    font-size: 1em;
+    margin-left: .5em;
+    padding-right: 2em;
+    background-color: alpha(@black, .8);
+    border-radius: 10px;
+    color: @text;
+}
+
 .notification-group-close-all-button {
     margin: 4px 12px; 
     padding: 4px 20px;
     border-radius: 10px;
-    background-color: transparent;
+    background-color: alpha(@black, .8);
     border: none;
 }
 
@@ -86,26 +107,12 @@
     background-color: @red;
 }
 
-/* Notifications expanded-group */
-.notification-group {
-    margin: 6px;
-
-}
-.notification-group-headers {
-    font-weight: bold;
-    font-size: 1.2rem;
-    color: @text;
-}
-
-.notification-group-icon {
-    color: transparent;
-}
 
 .notification-group-collapse-button {
     margin: 4px; 
     padding: 4px 20px;
     border-radius: 10px;
-    background: transparent;
+    background-color: alpha(@black, .8);
     color: @text;
 }
 
@@ -114,7 +121,7 @@
 }  
 
 .notification-group-collapse-button:active {
-    background: alpha(@tint, .5);
+    background-color: alpha(@tint, .5);
 }  
 
 /* WIDGETS --------------------------------------------------------------------------- */
@@ -147,7 +154,7 @@
     padding: 0;
     margin: 6px;
     border-radius: 1em;
-    background: transparent;
+    background: alpha(@text, .5);
 }
 
 .widget-buttons-grid > flowbox > flowboxchild > button {
@@ -156,7 +163,7 @@
     min-height: 24px;
     padding: 12px;
     border-radius: 1em;
-    background: @black;
+    background: alpha(@black, .9);
 }
 
 .widget-buttons-grid > flowbox > flowboxchild > button:hover {
