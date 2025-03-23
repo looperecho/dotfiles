@@ -20,7 +20,8 @@
     // ────────
     "modules-left": [
         "hyprland/workspaces",
-        "hyprland/window"
+        "hyprland/window",
+        "hyprland/window#title"
     ],
 
     "modules-center": [
