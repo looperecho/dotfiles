@@ -29,7 +29,7 @@
     border-radius: 10px;
     border: 1px solid alpha(@text, .2);
     border-right: 10px solid alpha(@tint, .5);
-    background-color: alpha(@black, .8);
+    background-color: @black;
     padding: 6px;
     margin: 6px;
 }
