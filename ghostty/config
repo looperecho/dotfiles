@@ -1,5 +1,6 @@
 # Ghostty terminal config
-# .repo/ghostty/config
+# .config/ghostty/config
+
 
 # Theme
 theme = Pnevma
@@ -12,3 +13,5 @@ window-theme = ghostty
 
 # Keybinds
 keybind = ctrl+w=close_surface
+keybind = super+t=new_tab
+keybind = super+grave_accent=reload_config
