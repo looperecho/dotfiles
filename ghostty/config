@@ -1,7 +1,6 @@
 # Ghostty terminal config
 # .config/ghostty/config
 
-
 # Theme
 theme = Pnevma
 # background = 1a2023
