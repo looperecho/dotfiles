@@ -10,11 +10,11 @@ Keybind Table
 | Modifier      | Key                           | Action                            |
 | :------------ | :------------                 | :----------------                 |
 | **General**   |
-| `MEH`         | `q`                           | Killactive                        |
+| `HYPER`       | `-`                           | Killactive                        |
+| `HYPER`       | `n`                           | Toggle Notification Center        |
 | `MEH`         | `b`                           | Reload Waybar                     |
 | `MEH`         | `s`                           | Reload Swaync                     |
 | `MEH`         | `h`                           | Reload Hyprland                   |
-| `HYPER`       | `n`                           | Toggle Notification Center        |
 | **Capturing** |
 |               | `Print`                       | Screenshot                        |
 | `SHIFT`       | `Print`                       | Toggle Screen Recording           |
@@ -25,8 +25,11 @@ Keybind Table
 | `ALT`         | `3`                           | Launch File Manager               |
 | `ALT`         | `4`                           | Launch Steam                      |
 | `ALT`         | `5`                           | Launch Spotify                    |
+| `ALT`         | `6`                           | Launch Discord                    |
 | **Layout**    |
+| `HYPER`       | `z`                           | Swap window split                 |
 | `SUPER`       | `z`                           | Switch split method               |
+| `SUPER`       | `p`                           | Toggle pseudo mode                | 
 | `SUPER`       | `f`                           | Toggle floating & center          |
 | `SUPER`       | `F12`                         | Fake Fullscreen (Floating)        |
 | `MEH`         | `f`                           | Native Fullscreen                 |
@@ -36,16 +39,14 @@ Keybind Table
 | `HYPER`       | `up` or `w` or `k`            | Focus up                          |
 | `HYPER`       | `down` or `s` or `j`          | Focus down                        |
 | `HYPER`       | `1` - `0`                     | Focus workspace `1-10`            |
-| `HYPER`       | `e` or `i` or `scroll_down`   | Focus next workspace              |
-| `HYPER`       | `q` or `u` or `scroll_up`     | Focus previous workspace          |
+| `HYPER`       | `e` or `.` or `scroll_down`   | Focus next workspace              |
+| `HYPER`       | `q` or `,` or `scroll_up`     | Focus previous workspace          |
 | `HYPER`       | `tab`                         | Focus next active workspace       |
 |**Movement**   |
 | `SUPER`       | `left` or `a` or `h`          | Move window left                  |
 | `SUPER`       | `right` or `d` or `l`         | Move window right                 |
 | `SUPER`       | `up` or `w` or `k`            | Move window up                    |
 | `SUPER`       | `down` or `s` or `j`          | Move window down                  |
-| `SUPER`       | `p`                           | Toggle pseudo mode                | 
-| `HYPER`       | `z`                           | Swap window split                 |
 | `SUPER`       | `1` - `0`                     | Move window to workspace `1-10`   |
 | `SUPER`       | `q` or `u`                    | Move window to previous workspace |
 | `SUPER`       | `e` or `i`                    | Move window to next workspace     |
