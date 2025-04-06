@@ -34,19 +34,19 @@ Keybind Table
 | `SUPER`       | `F12`                         | Fake Fullscreen (Floating)        |
 | `MEH`         | `f`                           | Native Fullscreen                 |
 | **Navigation**|
-| `HYPER`       | `left` or `a` or `h`          | Focus left                        |
-| `HYPER`       | `right` or `d` or `l`         | Focus right                       |
-| `HYPER`       | `up` or `w` or `k`            | Focus up                          |
-| `HYPER`       | `down` or `s` or `j`          | Focus down                        |
+| `HYPER`       | `←` / `a` / `h`               | Focus left                        |
+| `HYPER`       | `→` / `d` / `l`               | Focus right                       |
+| `HYPER`       | `↑` / `w` / `k`               | Focus up                          |
+| `HYPER`       | `↓` / `s` / `j`               | Focus down                        |
 | `HYPER`       | `1` - `0`                     | Focus workspace `1-10`            |
-| `HYPER`       | `e` or `.` or `scroll_down`   | Focus next workspace              |
-| `HYPER`       | `q` or `,` or `scroll_up`     | Focus previous workspace          |
+| `HYPER`       | `e` / `.` / `scroll_down`     | Focus next workspace              |
+| `HYPER`       | `q` / `,` / `scroll_up`       | Focus previous workspace          |
 | `HYPER`       | `tab`                         | Focus next active workspace       |
 |**Movement**   |
-| `SUPER`       | `left` or `a` or `h`          | Move window left                  |
-| `SUPER`       | `right` or `d` or `l`         | Move window right                 |
-| `SUPER`       | `up` or `w` or `k`            | Move window up                    |
-| `SUPER`       | `down` or `s` or `j`          | Move window down                  |
+| `SUPER`       | `←` / `a` / `h`               | Move window left                  |
+| `SUPER`       | `→` / `d` / `l`               | Move window right                 |
+| `SUPER`       | `↑` / `w` / `k`               | Move window up                    |
+| `SUPER`       | `↓` / `s` / `j`               | Move window down                  |
 | `SUPER`       | `1` - `0`                     | Move window to workspace `1-10`   |
-| `SUPER`       | `e` or `.`                    | Move window to next workspace     |
-| `SUPER`       | `q` or `,`                    | Move window to previous workspace |
+| `SUPER`       | `e` / `.`                     | Move window to next workspace     |
+| `SUPER`       | `q` / `,`                     | Move window to previous workspace |
