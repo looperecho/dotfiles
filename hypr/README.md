@@ -48,5 +48,5 @@ Keybind Table
 | `SUPER`       | `up` or `w` or `k`            | Move window up                    |
 | `SUPER`       | `down` or `s` or `j`          | Move window down                  |
 | `SUPER`       | `1` - `0`                     | Move window to workspace `1-10`   |
-| `SUPER`       | `q` or `u`                    | Move window to previous workspace |
-| `SUPER`       | `e` or `i`                    | Move window to next workspace     |
+| `SUPER`       | `e` or `.`                    | Move window to next workspace     |
+| `SUPER`       | `q` or `,`                    | Move window to previous workspace |
