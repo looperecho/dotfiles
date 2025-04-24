@@ -1,4 +1,6 @@
 -- load theme hybrid
+-- plugins/theme.lua
+
 return {
     {
         "HoNamDuong/hybrid.nvim",
