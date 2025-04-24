@@ -4,9 +4,6 @@
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
--- semicolon for command mode
--- vim.keymap.set("n", ";", ":")
-
 -- Navigate out of insert mode
 vim.keymap.set("i", "jj", "<esc>")
 vim.keymap.set("i", "kk", "<esc>")
@@ -38,9 +35,6 @@ vim.keymap.set("n", "<leader>dx", "<cmd>!chmod +x %<CR>", {silent=true, desc="Ma
 --
 -- Return to netrw
 vim.keymap.set("n", "<leader>gn", vim.cmd.Ex, {desc="⟶ Netrw"})
-
--- Toggle undotree
-vim.keymap.set('n', '<leader>tu', vim.cmd.UndotreeToggle, {desc="Undo Tree"})
 
 -- Toggle Colorizer
 vim.keymap.set('n', '<leader>tc', vim.cmd.ColorizerToggle, {desc="Colorizer"})
