@@ -1,4 +1,5 @@
 -- Telescope config
+-- plugins/telescope.lua
 
 return {
     {
@@ -19,7 +20,7 @@ return {
 
             { 'nvim-telescope/telescope-ui-select.nvim' },
 
-            -- Useful for getting pretty icons, but requires a Nerd Font.
+            -- nerdfont settings
             { 'nvim-tree/nvim-web-devicons', enabled = vim.g.have_nerd_font },
         },
         config = function()
@@ -40,7 +41,7 @@ return {
             pcall(require('telescope').load_extension, 'fzf')
             pcall(require('telescope').load_extension, 'ui-select')
 
-            -- See `:help telescope.builtin`
+            -- keymaps
             local builtin = require 'telescope.builtin'
             vim.keymap.set('n', '<leader>sh', builtin.help_tags, { desc = '[S]earch [H]elp' })
             vim.keymap.set('n', '<leader>sk', builtin.keymaps, { desc = '[S]earch [K]eymaps' })
@@ -63,7 +64,6 @@ return {
             end, { desc = '[/] Fuzzily search in current buffer' })
 
             -- It's also possible to pass additional configuration options.
-            --  See `:help telescope.builtin.live_grep()` for information about particular keys
             vim.keymap.set('n', '<leader>s/', function()
                 builtin.live_grep {
                     grep_open_files = true,
