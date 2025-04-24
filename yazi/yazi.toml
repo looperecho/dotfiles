@@ -5,3 +5,4 @@
 [manager]
 ratio       = [ 1, 4, 4 ]
 show_hidden = true
+linemode    = "size"
