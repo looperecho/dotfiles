@@ -26,12 +26,7 @@
     "hide-on-clear": false,
     "hide-on-action": true,
     "script-fail-notify": true,
-    "scripts": {
-        "example-script": {
-            "exec": "echo 'Do something...'",
-            "urgency": "Normal"
-        }
-    },
+    "scripts": {},
 
     "notifications": {
         "ignored-apps": [
@@ -71,10 +66,6 @@
         "label": {
             "max-lines": 1,
             "text": ""
-        },
-        "mpris":{
-            "image-size": 96,
-            "blacklist": ["playerctld"]
         },
         "buttons-grid": {
             "actions": [
