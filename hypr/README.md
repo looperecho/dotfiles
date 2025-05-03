@@ -27,8 +27,8 @@ Keybind Table
 | `ALT`         | `5`                           | Launch Spotify                    |
 | `ALT`         | `6`                           | Launch Discord                    |
 | **Layout**    |
-| `HYPER`       | `z`                           | Swap window split                 |
-| `SUPER`       | `z`                           | Switch split method               |
+| `HYPER`       | `z`                           | Switch split method               |
+| `SUPER`       | `z`                           | Swap window split                 |
 | `SUPER`       | `p`                           | Toggle pseudo mode                | 
 | `SUPER`       | `f`                           | Toggle floating & center          |
 | `SUPER`       | `F12`                         | Fake Fullscreen (Floating)        |
@@ -50,3 +50,11 @@ Keybind Table
 | `SUPER`       | `1` - `0`                     | Move window to workspace `1-10`   |
 | `SUPER`       | `e` / `.`                     | Move window to next workspace     |
 | `SUPER`       | `q` / `,`                     | Move window to previous workspace |
+|**Groups**     |
+| `MEH`         | `g`                           | Toggle Groups                     |
+| `HYPER`       | `page_up`                     | Focus previous tab                |
+| `HYPER`       | `page_down`                   | Focus next tab                    |
+| `SUPER`       | `a`                           | Move window into group left       |
+| `SUPER`       | `d`                           | Move window into group right      |
+| `SUPER`       | `w`                           | Move window into group up         |
+| `SUPER`       | `s`                           | Move window into group down       |
