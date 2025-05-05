@@ -19,7 +19,7 @@ Keybind Table
 |               | `Print`                       | Screenshot                        |
 | `SHIFT`       | `Print`                       | Toggle Screen Recording           |
 | **Launchers** |
-| `HYPER`       | `Space`                       | App Launcher                      |
+| `HYPER`       | `Space`                       | Toggle App Launcher               |
 | `ALT`         | `1`                           | Launch Terminal                   |
 | `ALT`         | `2`                           | Launch Web Browser                |
 | `ALT`         | `3`                           | Launch File Manager               |
@@ -30,6 +30,7 @@ Keybind Table
 | `HYPER`       | `z`                           | Switch split method               |
 | `SUPER`       | `z`                           | Swap window split                 |
 | `SUPER`       | `p`                           | Toggle pseudo mode                | 
+| `SUPER`       | `m`                           | Toggle pseudo and resize width    |
 | `SUPER`       | `f`                           | Toggle floating & center          |
 | `SUPER`       | `F12`                         | Fake Fullscreen (Floating)        |
 | `MEH`         | `f`                           | Native Fullscreen                 |
