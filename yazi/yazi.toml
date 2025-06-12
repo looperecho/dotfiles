@@ -2,7 +2,7 @@
 # modified only, default applies otherwise
 # for default config, see: https://github.com/sxyazi/yazi/blob/main/yazi-config/preset/yazi-default.toml
 
-[manager]
+[mgr]
 ratio       = [ 1, 4, 4 ]
 show_hidden = true
 linemode    = "size"
