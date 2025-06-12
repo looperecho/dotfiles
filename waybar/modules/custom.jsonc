@@ -34,6 +34,19 @@
 
 
     // ────────
+    // Screen record indicator
+    // ────────
+    "custom/wf-recording": {
+        "exec": "~/.config/waybar/bin/wf-record-status.sh",
+        "interval": 1,
+        "format": "{icon}",
+        "format-icons": {
+            "recording": ""
+        },
+        "return-type": "json"
+    },
+
+    // ────────
     // Notifications
     // ────────
     "custom/notification": {
