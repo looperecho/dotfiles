@@ -2,7 +2,7 @@
 # modified only, defaults apply otherwise
 # for original defaults, see: https://github.com/sxyazi/yazi/blob/main/yazi-config/preset/keymap-default.toml
 
-[manager]
+[mgr]
 prepend_keymap = [
     { on = "Q",     run = "quit",               desc = "Quit the process, remain in selected dir" },
     { on = "q",     run = "quit --no-cwd-file", desc = "Quit the process, back to original dir" },
