@@ -33,7 +33,7 @@ vim.opt.expandtab = true
 
 -- Incremental search highlighting
 vim.opt.incsearch = true
-vim.opt.hlsearch = true
+vim.opt.hlsearch = false
 vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
 
 -- Sync clipboard
