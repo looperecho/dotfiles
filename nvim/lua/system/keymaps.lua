@@ -20,6 +20,9 @@ vim.keymap.set("i", "<C-l>", "<Right>")
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 
+-- Paste from void register
+vim.keymap.set("x", "<leader>p", "\"_dP")
+
 -- Search cursor middle
 vim.keymap.set("n", "n", "nzzzv")
 vim.keymap.set("n", "N", "Nzzzv")
