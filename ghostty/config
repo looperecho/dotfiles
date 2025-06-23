@@ -3,9 +3,9 @@
 
 # Theme
 theme = Pnevma
-# background = 1a2023
 foreground = 9a9a9a
 background-opacity = .75
+window-padding-y = 0,0
 window-padding-balance = true
 window-padding-color = background
 window-theme = ghostty
