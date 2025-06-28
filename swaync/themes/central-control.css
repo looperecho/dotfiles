@@ -1,177 +1,186 @@
 * {
-    color: @text;
-    all: unset;
-    font-size: 18px;
-    font-family: "Inter";
-    transition: 200ms;
+    color:          @text;
+    font-size:      18px;
+    font-family:    "Inter";
+    transition:     200ms;
+    all:            unset;
 }
 
 /* Avoid 'annoying' backgroud */
 .blank-window {  
-    background: transparent;  
+    background:     transparent;  
 }
 
 /* CONTROL CENTER ------------------------------------------------------------------------ */
 .control-center {
-    color: @text;
-    background: alpha(@text, .0);
-    border-radius: 10px;
-    border: none;
-    margin: 11px;
-    padding: 12px;
+    color:          @text;
+    background:     alpha(@white, 0.0);
+    border-radius:  10px;
+    border:         none;
+    margin:         11px;
+    padding:        12px;
 }
 
 .control-center-list-placeholder {
-    color: transparent;
+    color:          transparent;
 }
 
 /* Notifications  */
 .control-center .notification-row .notification-background {
-    color: @text;
-    border-radius: 10px;
-    margin: 0;
-    padding: 0;
+    color:          @text;
+    border-radius:  10px;
+    margin:         0;
+    padding:        0;
+    background:     alpha(@black, .4)
 }
 
 .control-center .notification-row .notification-background .notification {
-    border-radius: 10px;
-    border: 1px solid alpha(@text, .2);
-    border-right: 10px solid alpha(@tint, .5);
-    background-color: alpha(@black, .9);
-    padding: 6px;
-    margin: 6px;
+    border-radius:  10px;
+    /* border:         1px solid alpha(@text, .2); */
+    border-right:   10px solid alpha(@tint, .5);
+    background:     alpha(@black, .75);
+    padding:        6px;
+    margin:         6px;
 }
 
 .control-center .notification-row .notification-background .notification.critical {
-    border-radius: 10px;
-    border-right: 10px solid @yellow;
-    padding: 6px;
+    border-radius:  10px;
+    border-right:   10px solid @yellow;
+    padding:        6px;
 }
 
 .control-center .notification-row .notification-background .notification .notification-content {
-    margin: 14px;
+    margin:         14px;
 }
 
-/* Buttons */
+/* Close Buttons */
 .control-center .notification-row .notification-background .close-button {
-    margin: -2px 396px 0 0;
-    padding: 2px 2px;
-    border-radius: 18px;
-    border: none;
-    background-color: alpha(@text, .5);
+    margin:         -2px 409px 0 0;
+    padding:        2px 2px;
+    border-radius:  18px;
+    border:         none;
+    background:     alpha(@black, .8);
 }
 
 .control-center .notification-row .notification-background .close-button:hover {
-    color: @text;
+    color:          @red;
 }
 
 .control-center .notification-row .notification-background .close-button:active {
-    background-color: @red;
+    background:     @red;
+    color:          @text;
 }
 
 
 /* Notifications expanded-group */
 .notification-group {
-    padding-top: 6px;
-    margin: 6px;
+    padding-top:    6px;
 }
 
 .notification-group-icon {
-    color: transparent;
+    margin:         30px 12px 12px 12px; 
+    color:          transparent;
 }
 
 .notification-group-headers {
-    font-weight: bold;
-    font-size: 1em;
-    margin-left: .5em;
-    padding-right: 2em;
-    background-color: alpha(@black, .8);
-    border-radius: 10px;
-    color: @text;
+    color:          transparent;
+    /* font-weight:    bold */
+    /* font-size:      1em; */
+    /* margin-left:    .5em; */
+    /* padding-right:  2em; */
+    /* background: alpha(@black, .8); */
+    /* border-radius:  10px; */
+    /* color:          @text; */
 }
 
 .notification-group-close-all-button {
-    margin: 4px 12px; 
-    padding: 4px 20px;
-    border-radius: 10px;
-    background-color: alpha(@black, .8);
-    border: none;
+    background:     alpha(@black, .6);
+    margin:         30px 12px 12px 12px; 
+    min-width:      1em;
+    padding:        .5em;
+    border-radius:  1em;
 }
 
 .notification-group-close-all-button:hover { 
-    background-color: alpha(@text, .5);
-    color: @text;
+    color:          @red;
 }
 
 .notification-group-close-all-button:active { 
-    background-color: @red;
+    background:     @red;
+    color:          @base;
 }
 
 
 .notification-group-collapse-button {
-    margin: 4px; 
-    padding: 4px 20px;
-    border-radius: 10px;
-    background-color: alpha(@black, .8);
-    color: @text;
+    background:     alpha(@black, .6);
+    margin:         30px 12px 12px 12px; 
+    padding:        .5em 3em;
+    border-radius:  1em;
+    color:          @text;
 }
 
 .notification-group-collapse-button:hover {
-    background: alpha(@text, .5);
+    color:          @tint;
 }  
 
 .notification-group-collapse-button:active {
-    background-color: alpha(@tint, .5);
+    background:     alpha(@black, .5);
 }  
 
 /* WIDGETS --------------------------------------------------------------------------- */
 
 /* Notification clear button */
 .widget-title {
-    color: @text;
-    font-size: 2em;
-    font-weight: bold;
-    margin: 6px;
+    color:          @text;
+    font-size:      2em;
+    font-weight:    bold;
+    margin:         6px;
 }
 
 .widget-title button {
-    background: @transparent;
-    border-radius: 18px;
-    padding: 10px 10px;
+    background:     @transparent;
+    border-radius:  18px;
+    padding:        10px 10px;
 }
 
 .widget-title button:hover {
-    color: @red;
+    color:          @red;
 }
 
 .widget-title button:active {
-    background-color: alpha(@text, .2);
+    background:     alpha(@text, .2);
 }
 
 /* Buttons menu */
 .widget-buttons-grid {
-    color: @text;
-    padding: 0;
-    margin: 6px;
-    border-radius: 1em;
-    background: alpha(@text, .5);
+    color:          @text;
+    padding:        1em;
+    margin:         6px;
+    border-radius:  1em;
+    background:     alpha(@black, .6);
+    box-shadow:     0 22px 22px 4px alpha(@black, .5);
 }
 
 .widget-buttons-grid > flowbox > flowboxchild > button {
-    margin: 6px;
-    min-width: 68px;
-    min-height: 24px;
-    padding: 12px;
-    border-radius: 1em;
-    background: alpha(@black, .9);
+    margin:         6px;
+    min-width:      60px;
+    min-height:     24px;
+    padding:        12px;
+    border-radius:  1em;
+    background:     alpha(@black, .9);
 }
 
 .widget-buttons-grid > flowbox > flowboxchild > button:hover {
-    color: @tint;
-    background: @base;
+    color:          @tint;
+    background:     alpha(@black, .5);
+}
+
+.widget-buttons-grid > flowbox > flowboxchild > button:active {
+    color:          @base;
+    background:     alpha(@white, .2);
 }
 
 .widget-buttons-grid > flowbox > flowboxchild > button:checked {
-    color: @base;
-    background: @text;
+    color:          @base;
+    background:     @tint;
 }
