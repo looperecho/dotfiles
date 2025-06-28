@@ -37,7 +37,7 @@
     },
     
     "notification-group-icon": {
-        "visible": "false"
+        "visible": "true"
     },
 
     "notification-visibility": {
@@ -83,7 +83,7 @@
                     "update-command": "sh -c '[[ $(rfkill list bluetooth | rg \"Soft blocked: no\") ]] && echo true || echo false'"
                 },
                 {
-                    "label": "",
+                    "label": " ",
                     "type": "toggle",
                     "active": false,
                     "command": "sh -c '[[ $SWAYNC_TOGGLE_STATE == true ]] && nmcli radio wifi on || nmcli radio wifi off'",
