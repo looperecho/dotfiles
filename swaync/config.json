@@ -81,7 +81,7 @@
                     "type": "toggle",
                     "active": false,
                     "command": "sh -c '[[ $SWAYNC_TOGGLE_STATE == true ]] && rfkill unblock bluetooth || rfkill block bluetooth'",
-                    "update-command": "sh -c '[[ $(rfkill list bluetooth | rg \"Soft blocked: no\") ]] && echo true || echo false'"
+                    "update-command": "sh -c '$HOME/.config/swaync/bin/bluetooth-toggle.sh'"
                 },
                 {
                     "label": " ",
