@@ -31,22 +31,18 @@
     border-radius:  10px;
     margin:         0;
     padding:        0;
-    background:     alpha(@black, .4)
 }
 
 .control-center .notification-row .notification-background .notification {
+    background: linear-gradient(0deg,rgba(0, 0, 0, .75) 40%, rgba(12, 12, 12, .75) 100%);
     border-radius:  10px;
-    /* border:         1px solid alpha(@text, .2); */
-    border-right:   10px solid alpha(@tint, .5);
-    background:     alpha(@black, .75);
     padding:        6px;
-    margin:         6px;
+    margin:         14px;
+    box-shadow:     1px 2px 6px 3px rgba(0, 0, 0, 0.3);
 }
 
 .control-center .notification-row .notification-background .notification.critical {
-    border-radius:  10px;
-    border-right:   10px solid @yellow;
-    padding:        6px;
+    border-right:   10px solid alpha(@yellow, .5);
 }
 
 .control-center .notification-row .notification-background .notification .notification-content {
@@ -55,7 +51,7 @@
 
 /* Close Buttons */
 .control-center .notification-row .notification-background .close-button {
-    margin:         -2px 409px 0 0;
+    margin:         2px 405px 0 0;
     padding:        2px 2px;
     border-radius:  18px;
     border:         none;
@@ -68,7 +64,7 @@
 
 .control-center .notification-row .notification-background .close-button:active {
     background:     @red;
-    color:          @text;
+    color:          @black;
 }
 
 
