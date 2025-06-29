@@ -61,7 +61,7 @@
         "title": {
             "text": "Control Center",
             "clear-all-button": true,
-            "button-text": ""
+            "button-text": "Clear"
         },
         "label": {
             "max-lines": 1,
