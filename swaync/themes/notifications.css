@@ -17,25 +17,22 @@
 }
 
 .floating-notifications.background .notification-row .notification-background {
-    color:          @text;
-    border-radius:  10px;
     margin-right:   20px;
     margin-top:     8px;
     padding:        6px;
 }
 
 .floating-notifications.background .notification-row .notification-background .notification {
+    background:     linear-gradient(0deg,rgba(0, 0, 0, .75) 40%, rgba(12, 12, 12, .75) 100%);
+    color:          @text;
     border-radius:  10px;
-    border:         1px solid alpha(@text, .2);
-    border-right:   10px solid alpha(@tint, .5);
-    background:     alpha(@black, .75);
     padding:        6px;
-    margin:         6px;
+    margin:         14px;
+    box-shadow:     2px 3px 8px 2px rgba(0, 0, 0, 0.3);
 }
 
 .floating-notifications.background .notification-row .notification-background .notification.critical {
-    border-radius:  10px;
-    border-right:   10px solid @yellow;
+    border-right:   10px solid alpha(@yellow, .5);
     padding:        6px;
 }
 
@@ -48,19 +45,19 @@
 }
 
 .floating-notifications.background .notification-row .notification-background .notification > *:last-child > * .notification-action {
-    border-radius:  8px;
-    background:     @mixed;
+    border-radius:  10px;
+    background:     alpha(@text, .1);
     margin:         6px;
-    border:         1px solid transparent;
-}
-
-.floating-notifications.background .notification-row .notification-background .notification > *:last-child > * .notification-action:hover {
-    background:     @tint;
     border:         none;
 }
 
+.floating-notifications.background .notification-row .notification-background .notification > *:last-child > * .notification-action:hover {
+    background:     alpha(@white, .1);
+    color:          @tint;
+}
+
 .floating-notifications.background .notification-row .notification-background .notification > *:last-child > * .notification-action:active {
-    background:     @mixed;
+    background:     alpha(@text, .2);
     color:          @text;
 }
 
@@ -83,7 +80,7 @@
 }
 
 .floating-notifications.background .notification-row .notification-background .close-button {
-    margin:         -2px 424px 0 0;
+    margin:         2px 419px 0 0;
     padding:        2px 2px;
     border-radius:  18px;
     border:         none;
