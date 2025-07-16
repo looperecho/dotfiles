@@ -56,7 +56,7 @@
 
 /* Close Buttons */
 .control-center .notification-row .notification-background .close-button {
-    margin:         -2px 404px 0 0;
+    margin:         0px 454px 0 0;
     padding:        4px;
     border-radius:  18px;
     border:         1px solid alpha(@text, .2);
@@ -153,12 +153,12 @@
     margin:         6px;
     border-radius:  1em;
     background:     alpha(@black, .6);
-    box-shadow:     0 22px 22px 4px alpha(@black, .5);
+    box-shadow:     -2px 2px 4px 4px rgba(0, 0, 0, 0.1);
 }
 
 .widget-buttons-grid > flowbox > flowboxchild > button {
     margin:         6px;
-    min-width:      60px;
+    min-width:      72px;
     min-height:     24px;
     padding:        12px;
     border-radius:  1em;
