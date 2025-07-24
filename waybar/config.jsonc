@@ -30,6 +30,7 @@
 
     "modules-right": [
         "group/group-tray",
+        "custom/vpn",
         "privacy",
         "custom/wf-recording",
         "bluetooth",
