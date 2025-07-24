@@ -41,6 +41,7 @@ tooltip label{
 #group-tray,
 #wireplumber,
 #privacy,
+#custom-vpn,
 #custom-wf-recording.recording,
 #bluetooth,
 #temperature,
@@ -264,7 +265,7 @@ tooltip label{
 }
 
 #group-audio:hover {
-    background-color: alpha(@text, 0.1);
+    background-color: alpha(@text, .1);
 }
 
 
@@ -281,6 +282,22 @@ tooltip label{
     color: @red;
     transition: all 0.2s;
 }
+
+
+/* ──── VPN ──── */
+#custom-vpn {
+    color: alpha(@text, .5);
+}
+
+#custom-vpn:hover {
+    color: @text;
+}
+
+#custom-vpn.connected {
+    color: @blue;
+    background: alpha(@black, .3);
+}
+
 
 /* ──── Clock ──── */
 #group-datetime {
