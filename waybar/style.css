@@ -124,7 +124,7 @@ tooltip label{
 
 /* ──── Bluetooth ──── */
 #bluetooth {
-    margin: .25em;
+    margin: 0 .25em;
 }
 
 #bluetooth.disabled {
@@ -219,6 +219,7 @@ tooltip label{
 /* ──── Wireplumber (Audio Icon) ──── */
 #wireplumber {
     margin: 0 .25em;
+    padding-left: 0;
 }
 
 #wireplumber:hover {
@@ -227,7 +228,7 @@ tooltip label{
 
 /* ──── PulseAudio Slider ──── */
 #pulseaudio-slider {
-    margin: 0.25em;
+    margin: 0 .1em;
 }
 
 #pulseaudio-slider slider {
@@ -243,7 +244,7 @@ tooltip label{
     min-height: .5em;
     min-width: 6em;
     border-radius: .3em;
-    background-color: alpha(@black, .3);
+    background-color: alpha(@text, .2);
 }
 
 #pulseaudio-slider highlight {
@@ -254,9 +255,9 @@ tooltip label{
 
 /* ──── Pulse Audio (Volume %) ──── */
 #pulseaudio {
+    margin: 0;
     color: @text;
     min-width: 3em;
-    padding-right: .3em;
 }
 
 /* ──── Audio Drawer Group ──── */
@@ -265,7 +266,7 @@ tooltip label{
 }
 
 #group-audio:hover {
-    background-color: alpha(@text, .1);
+    background-color: alpha(@black, .3);
 }
 
 
@@ -286,6 +287,7 @@ tooltip label{
 
 /* ──── VPN ──── */
 #custom-vpn {
+    margin: 0 .25em;
     color: alpha(@text, .5);
 }
 
