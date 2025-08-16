@@ -42,7 +42,8 @@
     "hyprland/window#title": {
         "format": "{title}",
         "rewrite": {
-            "(.*) — Zen Browser$": "$1",
+            "^.* - YouTube.*": "YouTube", // Negate long youtube titles
+            "^(.*) — Mozilla Firefox$": "$1",
             "^(Steam)$": ""
         },
         "icon": false,
