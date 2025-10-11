@@ -16,6 +16,7 @@ tooltip  {
     border: none;
     text-shadow: none;
 }
+
 tooltip label{
     color: @text;
     border-radius: .3em;
@@ -29,7 +30,7 @@ tooltip label{
 .modules-left,
 .modules-center,
 .modules-right {
-    padding: .5em .7em 0;
+    padding: .3em;
 }
 
 
