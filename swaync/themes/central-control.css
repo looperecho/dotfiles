@@ -17,7 +17,7 @@
     background:     alpha(@white, 0.0);
     border-radius:  10px;
     border:         none;
-    margin:         11px;
+    margin:         -8px 8px 10px 10px;
     padding:        12px;
 }
 
