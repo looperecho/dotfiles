@@ -2,11 +2,11 @@
 # Set The prompt
 precmd() {
 
-    # Find screen session
-    if [[ -n "$STY" ]]; then
-        SCREEN_SESSION="%F{0}Screen%f "
+    # Find ssh session
+    if [[ -n "$SSH_CONNECTION" ]]; then
+        SSH_PROMPT="%F{3}$HOST%f "
     else
-        SCREEN_SESSION=
+        SSH_PROMPT=
     fi
     
     # Find venv
@@ -44,7 +44,7 @@ precmd() {
     # Compact mode
     COMPACT="
  $PRINTDIR
- $SCREEN_SESSION$PSYMBOL"
+ $SSH_PROMPT$PSYMBOL"
 
     # >>> Set the prompt mode here ( DEFAULT or COMPACT )
     PROMPT="$COMPACT"
