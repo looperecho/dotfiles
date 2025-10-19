@@ -40,11 +40,13 @@ if [ -f $PLUGINS ]; then
   source $PLUGINS
 fi
 
-# ┌──── Check for SSH session
+
+# ┌──── SSH check
 # ▼
-if [[ -n $SSH_CONNECTION ]] ; then
-    sh "$BASHBIN/tmux-login.sh"
+if [[ -n $SSH_CONNECTION ]]; then
+    $HOME/.local/bin/pfetch
 fi
+
 
 # ┌──── Pyenv Stuff 
 # ▼ 
