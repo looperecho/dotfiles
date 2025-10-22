@@ -18,7 +18,7 @@ if [[ -f "$PID_FILE" ]]; then
         -i media-playback-stop-symbolic
 else
     # Start wf-recorder
-    wf-recorder \
+    wf-recorder -r 30\
         -g "$(slurp)" \
         -f "$OUTPUT_FILE" \
         & echo $! > "$PID_FILE"
