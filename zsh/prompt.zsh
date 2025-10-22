@@ -43,8 +43,8 @@ precmd() {
 
     # Compact mode
     COMPACT="
- $PRINTDIR
- $SSH_PROMPT$PSYMBOL"
+ $SSH_PROMPT$PRINTDIR
+ $PSYMBOL"
 
     # >>> Set the prompt mode here ( DEFAULT or COMPACT )
     PROMPT="$COMPACT"
