@@ -28,11 +28,11 @@
         "format": "{initialClass}",
         "rewrite": {
             "firefox": "Firefox",
-            "zen": "Zen",
             "steam": "Steam",
             "(.*)ghostty": "Ghostty",
             "(.*)wezterm": "Wezterm",
-            "(.*)Nautilus": "Files"
+            "(.*)Nautilus": "Files",
+            ".*\\.([^.]+)": "$1"
         },
         "separate-outputs": true,
         "icon": false,
