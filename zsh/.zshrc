@@ -16,6 +16,7 @@ alias e="$EDITOR"
 # ┌──── Paths 
 # ▼
 export PATH=$HOME/.repo/bin:$PATH
+export PATH=$HOME/.local/bin:$PATH
 export PATH=$HOME/.local/bin/appimages:$PATH
 export XDG_CONFIG_HOME="$HOME/.config"
 
