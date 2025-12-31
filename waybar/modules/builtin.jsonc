@@ -171,7 +171,8 @@
             {
                 "type": "audio-in",
                 "tooltip": true,
-                "tooltip-icon-size": 18
+                "tooltip-icon-size": 18,
+                "on-click": "wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle"
             },
             {
                 "type": "screenshare",
