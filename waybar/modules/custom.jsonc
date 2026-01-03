@@ -15,10 +15,10 @@
         "interval": 3,
         "format": "{icon}",
         "exec": "~/.config/waybar/bin/vpn_status.sh",
-        "on-click": "nmcli -t -f NAME connection show --active | grep -Fxq 'NL-AMS' && nmcli connection down NL-AMS || nmcli connection up NL-AMS",
+        // "on-click": "nmcli -t -f NAME connection show --active | grep -Fxq 'NL-AMS' && nmcli connection down NL-AMS || nmcli connection up NL-AMS",
         "format-icons": {
-            "vpn_on": "",
-            "vpn_off": ""
+            "vpn_on": ""
+            //"vpn_off": ""
         },
         "tooltip": false,
         "return-type": "json"
