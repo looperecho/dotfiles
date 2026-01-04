@@ -7,7 +7,7 @@ application_prefer_dark_theme = true
 theme_name = "Orchis-Grey-Dark"
 font_name = "Inter Regular 10"
 cursor_theme_name = "Notwaita-Gray"
-icon_theme_name = "Boston"
+# icon_theme_name = "Boston"
 
 [appearance]
 greeting_msg = ""
