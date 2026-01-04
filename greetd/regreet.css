@@ -1,32 +1,26 @@
+/* Borders */
 window > overlay > frame {
     border: none;
-	background-color: transparent;
+    background-color: transparent;
 }
 window > overlay > frame:nth-child(3) {
     margin-top: 100px;
 }
+/* Clock */
 window > overlay > frame:nth-child(3) > label {
-	color: alpha(white, .5);
-	font-size: 24px;
-	text-transform: uppercase;
+    color: rgba(255,255,255, 0.5);
+    font-size: 24px;
+    text-transform: uppercase;
 }
-
 /* Buttons Container */
 window > overlay > box {
     margin-bottom: 100px;
 }
-
 /* Restart Button */
 window > overlay > box > box > button:first-child {
     background-color: rgba(255,255,255,.2);
 }
-
 /* Power Off Button */
 window > overlay > box > box > button:nth-child(2) {
     background-color: rgba(255,100,100,.2);
-}
-
-/* spacer line */
-window > overlay > box > frame {
-	opacity: 10;
 }
