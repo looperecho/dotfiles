@@ -89,7 +89,7 @@
         "orientation": "inherit",
         "drawer": {
             "transition-duration": 300,
-            "transition-left-to-right": false,
+            "transition-left-to-right": true,
             "click-to-reveal": true,
             "children-class": "tray-icons"
         },
