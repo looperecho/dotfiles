@@ -19,17 +19,17 @@
     // Module Layout
     // ────────
     "modules-left": [
-        "hyprland/workspaces",
+        "group/group-tray",
         "hyprland/window",
         "hyprland/window#title"
     ],
 
     "modules-center": [
-        "mpris"
+        "hyprland/workspaces"
     ],
 
     "modules-right": [
-        "group/group-tray",
+        "mpris",
         "custom/vpn",
         "privacy",
         "custom/wf-recording",
