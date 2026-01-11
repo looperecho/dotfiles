@@ -30,11 +30,11 @@
 
     "modules-right": [
         "mpris",
+        "group/group-audio",
         "custom/vpn",
         "privacy",
         "custom/wf-recording",
         "bluetooth",
-        "group/group-audio",
         "group/group-datetime",
         "custom/notification"
     ]
