@@ -56,9 +56,9 @@ tooltip label{
     font-weight: 600;
     font-size: 18px;
     transition: all 0.5s ease-in-out;
-    border-radius: 0.7em;
     padding: 0 .5em;
     color: @text;
+    border-top: 3px solid alpha(@tint, 0);
 }
 
 
@@ -67,13 +67,14 @@ tooltip label{
     border-radius: 1em;
     margin: 0 1em;
     transition: all 0.5s ease-in-out;
+    background: alpha(@text, 0);
 }
 
 #workspaces button {
     color: @text;
     margin: 0;
     padding: 0.1em 0 0 0.4em;
-    background-color: alpha(@text, 0);
+    background: alpha(@text, 0);
     transition: all 0.5s ease-out;
 }
 
@@ -89,7 +90,6 @@ tooltip label{
 #workspaces button.active {
     color: alpha(@tint, .8);
     opacity: 1;
-
 }
 
 #workspaces button:hover {
@@ -118,8 +118,13 @@ tooltip label{
 
 
 /* ──── MPRIS ──── */
+#mpris {
+    border-top: 3px solid alpha(@tint, .5);
+}
+
 #mpris.paused {
     opacity: .5;
+    border-top: 3px solid alpha(@text, 0);
 }
 
 
@@ -159,7 +164,7 @@ tooltip label{
 }
 
 #group-tray:hover {
-    background-color: alpha(@black, .3);
+    border-top: 3px solid alpha(@text, .5);
 }
 
 /* ──── ibus ──── */
@@ -236,7 +241,6 @@ tooltip label{
     min-height: 0;
     min-width: 0;
     opacity: 0;
-    background-color: alpha(@white, 0);
     box-shadow: none;
     color: @text;
 }
@@ -245,13 +249,13 @@ tooltip label{
     min-height: .5em;
     min-width: 6em;
     border-radius: .3em;
-    background-color: alpha(@text, .2);
+    background: alpha(@text, .2);
 }
 
 #pulseaudio-slider highlight {
     min-width: .5em;
     border-radius: .3em;
-    background-color: @tint;
+    background: alpha(@tint, .5);
 }
 
 /* ──── Pulse Audio (Volume %) ──── */
@@ -267,7 +271,8 @@ tooltip label{
 }
 
 #group-audio:hover {
-    background-color: alpha(@black, .3);
+    border-radius: 0;
+    border-top: 3px solid alpha(@text, .5);
 }
 
 
@@ -302,17 +307,10 @@ tooltip label{
 }
 
 
-/* ──── Clock ──── */
-#group-datetime {
-    margin: 0 .25em;
-}
-
-
 /* ──── Notification (Swaync) ──── */
 #custom-notification {
     margin-right: 1em;
     margin-left: .25em;
-    border-radius: .7em;
     padding: .1em .8em 0 .4em;
 }
 
@@ -329,5 +327,4 @@ tooltip label{
 
 #custom-notification:hover {
     color: @tint;
-    background-color: alpha(@black, .3);
 }
