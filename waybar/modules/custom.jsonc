@@ -56,7 +56,7 @@
         "interval": 1,
         "format": "{icon}",
         "format-icons": {
-            "recording": ""
+            "recording": " "
         },
         "return-type": "json"
     },
