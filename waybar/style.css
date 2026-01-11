@@ -55,10 +55,10 @@ tooltip label{
     font-family: 'Inter';
     font-weight: 600;
     font-size: 18px;
-    transition: all .5s ease-in-out;
     padding: 0 .5em;
     color: @text;
-    border-top: 3px solid alpha(@red, 0);
+    transition: all .5s ease-in-out;
+    border-top: 4px solid alpha(@red, 0);
 }
 
 
@@ -73,7 +73,8 @@ tooltip label{
     margin: 0 .2em;
     padding: 0 0 0 .2em;
     border-radius: 0;
-    transition: all .1s ease-out;
+    transition: all .5s ease-out;
+    background-color: alpha(@red, 0);
 }
 
 #workspaces button.empty {
@@ -91,8 +92,9 @@ tooltip label{
 }
 
 #workspaces button:hover {
-    opacity: 1;
     color: @yellow;
+    opacity: 1;
+    background-color: alpha(@red, 0);
 }
 
 
@@ -117,12 +119,12 @@ tooltip label{
 
 /* ──── MPRIS ──── */
 #mpris {
-    border-top: 3px solid alpha(@tint, .5);
+    border-top: 4px solid alpha(@tint, .5);
 }
 
 #mpris.paused {
     opacity: .5;
-    border-top: 3px solid alpha(@red, 0);
+    border-top: 4px solid alpha(@red, 0);
 }
 
 
@@ -162,7 +164,7 @@ tooltip label{
 }
 
 #group-tray:hover {
-    border-top: 3px solid alpha(@text, .5);
+    border-top: 4px solid alpha(@text, .5);
 }
 
 /* ──── ibus ──── */
@@ -222,7 +224,7 @@ tooltip label{
 
 /* ──── Wireplumber (Audio Icon) ──── */
 #wireplumber {
-    margin: 0 .25em;
+    margin: 0 .25em .3em .5em;
     padding-left: 0;
 }
 
@@ -270,7 +272,7 @@ tooltip label{
 
 #group-audio:hover {
     border-radius: 0;
-    border-top: 3px solid alpha(@text, .5);
+    border-color: alpha(@text, .5);
 }
 
 
@@ -302,6 +304,17 @@ tooltip label{
 #custom-vpn.connected {
     color: @blue;
     background: alpha(@black, .3);
+}
+
+/* ──── Clock ──── */
+#clock.date {
+    color: alpha(@text, .8);
+    margin-bottom: .35em;
+    padding: 0;
+}
+
+#clock.time {
+    margin-bottom: .25em;
 }
 
 
