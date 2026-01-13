@@ -34,7 +34,7 @@
 }
 
 .control-center .notification-row .notification-background .notification {
-    background:     linear-gradient(0deg,rgba(0, 0, 0, .7) 40%, rgba(10, 10, 10, .7) 100%);
+    background:     linear-gradient(0deg,rgba(40, 40, 40, .55) 40%, rgba(45, 45, 45, .55) 100%);
     color:          @text;
     border-radius:  10px;
     padding:        6px;
@@ -54,22 +54,29 @@
     margin:         14px;
 }
 
+/* Notification group when collapsed */
+.notification-group.collapsed .notification-row:not(:last-child) .notification-action *,
+.notification-group.collapsed .notification-row:not(:last-child) .notification-default-action * {
+    opacity:        0;
+}
+
 /* Close Buttons */
 .control-center .notification-row .notification-background .close-button {
     margin:         0px 454px 0 0;
     padding:        4px;
     border-radius:  18px;
     border:         1px solid alpha(@text, .2);
-    background:     alpha(@black, .8);
+    background:     @text;
+    color:          @base;
 }
 
 .control-center .notification-row .notification-background .close-button:hover {
-    color:          @red;
+    background:     @white;
 }
 
 .control-center .notification-row .notification-background .close-button:active {
     background:     @red;
-    color:          @black;
+    color:          @base;
 }
 
 
@@ -77,6 +84,7 @@
 .notification-group {
     padding-top:    6px;
 }
+
 
 .notification-group-icon {
     margin:         30px 12px 12px 12px; 
@@ -89,7 +97,8 @@
 }
 
 .notification-group-close-all-button {
-    background:     alpha(@black, .6);
+    background:     @text;
+    color:          @base;
     margin:         30px 12px 0px 12px; 
     min-width:      1em;
     padding:        .5em;
@@ -97,7 +106,7 @@
 }
 
 .notification-group-close-all-button:hover { 
-    color:          @red;
+    background:     @white;
 }
 
 .notification-group-close-all-button:active { 
@@ -107,14 +116,15 @@
 
 
 .notification-group-collapse-button {
-    background:     alpha(@black, .6);
+    background:     @text;
     margin:         30px 0px 0px 12px; 
     padding:        .5em 3em;
     border-radius:  1em;
-    color:          @text;
+    color:          @base;
 }
 
 .notification-group-collapse-button:hover {
+    background:     @white;
     color:          @tint;
 }  
 
@@ -152,7 +162,7 @@
     padding:        1em;
     margin:         6px;
     border-radius:  1em;
-    background:     alpha(@black, .6);
+    background:     linear-gradient(0deg,rgba(40, 40, 40, .55) 40%, rgba(45, 45, 45, .55) 100%);
     box-shadow:     -2px 2px 4px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -162,7 +172,7 @@
     min-height:     24px;
     padding:        12px;
     border-radius:  1em;
-    background:     alpha(@black, .9);
+    background:     alpha(@black, .4);
 }
 
 .widget-buttons-grid > flowbox > flowboxchild > button:hover {
@@ -177,5 +187,5 @@
 
 .widget-buttons-grid > flowbox > flowboxchild > button:checked {
     color:          @base;
-    background:     @tint;
+    background:     alpha(@tint, .4);
 }
