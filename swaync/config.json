@@ -3,6 +3,9 @@
     "positionY": "top",
     "cssPriority": "user",
 
+    "layer-shell": true,
+    "layer": "overlay",
+    "control-center-layer": "overlay",
     "control-center-width": 480,
     "control-center-height": 1140, 
     "control-center-margin-top": 0,
