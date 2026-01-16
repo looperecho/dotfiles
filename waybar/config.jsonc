@@ -32,6 +32,7 @@
         "mpris",
         "group/group-audio",
         "custom/vpn",
+        "custom/mic-activity",
         "privacy",
         "custom/wf-recording",
         "bluetooth",
