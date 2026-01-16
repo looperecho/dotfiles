@@ -51,6 +51,7 @@ tooltip label{
 #custom-ibus,
 #group-datetime,
 #clock,
+#custom-mic-activity,
 #custom-notification {
     font-family: 'Inter';
     font-weight: 600;
@@ -281,6 +282,18 @@ tooltip label{
 #privacy-item.audio-in {
     margin: 0 .25em;
     color: alpha(@yellow, .8);
+}
+
+/* ──── Mic Activity ──── */
+#custom-mic-activity.silent,
+#custom-mic-activity.muted {
+    transition: all .2s ease-out;
+    opacity: .2;
+}
+
+#custom-mic-activity.active {
+    transition: all .1s linear;
+    color: @green;
 }
 
 /* ──── Privacy Screen Recording Icon ──── */
