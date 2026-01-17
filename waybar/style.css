@@ -285,14 +285,19 @@ tooltip label{
 }
 
 /* ──── Mic Activity ──── */
-#custom-mic-activity.silent,
-#custom-mic-activity.muted {
+#custom-mic-activity {
+    color: alpha(@yellow, .8);
+    font-size: 28;
     transition: all .2s ease-out;
-    opacity: .2;
+}
+
+#custom-mic-activity.muted {
+    color: alpha(@text, .4)
 }
 
 #custom-mic-activity.active {
     transition: all .1s linear;
+    border-color: @green;
     color: @green;
 }
 
@@ -346,6 +351,7 @@ tooltip label{
 #custom-notification.dnd-notification,
 #custom-notification.inhibited-notification,
 #custom-notification.dnd-inhibited-notification {
+    border-color: @tint;
     color: @tint;
 }
 
