@@ -161,19 +161,19 @@
 
 
     // ────────
-    // Privacy (audio input notifier)
+    // Privacy (Screenshare only)
     // ────────
     "privacy": {
         "icon-spacing": 4,
         "icon-size": 18,
         "transition-duration": 250,
         "modules": [
-            {
-                "type": "audio-in",
-                "tooltip": true,
-                "tooltip-icon-size": 18,
-                "on-click": "wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle"
-            },
+            // {
+            //     "type": "audio-in",
+            //     "tooltip": true,
+            //     "tooltip-icon-size": 18,
+            //     "on-click": "wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle"
+            // },
             {
                 "type": "screenshare",
                 "tooltip": true,
