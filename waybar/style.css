@@ -161,7 +161,7 @@ tooltip label{
 
 /* ──── Group Style ──── */
 #group-tray {
-    margin: 0 .25em;
+    margin-left: 1em;
 }
 
 #group-tray:hover {
@@ -328,7 +328,6 @@ tooltip label{
 #clock.date {
     color: alpha(@text, .8);
     margin-bottom: .35em;
-    padding: 0;
 }
 
 #clock.time {
