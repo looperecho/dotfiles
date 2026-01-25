@@ -35,7 +35,10 @@ vim.keymap.set("i", "{}", "{}<Left>")
 
 -- Make file executable
 vim.keymap.set("n", "<leader>dx", "<cmd>!chmod +x %<CR>", {silent=true, desc="Make Current File Executable"})
---
+
+-- Write as root
+vim.cmd([[ cnoreabbrev w!! w !sudo tee % >/dev/null <Bar> echo "Authenticate..."]])
+
 -- Return to netrw
 vim.keymap.set("n", "<leader>gn", vim.cmd.Ex, {desc="⟶ Netrw"})
 
