@@ -51,8 +51,8 @@ fi
 
 # ┌──── Pyenv Stuff 
 # ▼ 
-if [ -d $HOME/.repo/python/pyenv ]; then
-	export PYENV_ROOT="$HOME/.repo/python/pyenv"
+if [ -d $HOME/.local/share/pyenv ]; then
+	export PYENV_ROOT="$HOME/.local/share/pyenv"
 	[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
 	eval "$(pyenv init -)"
 	eval "$(pyenv virtualenv-init -)"
