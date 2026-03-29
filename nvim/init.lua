@@ -12,7 +12,7 @@ vim.o.title = true
 vim.o.titlestring = "Neovim - %{expand('%:t')}"
 
 -- theme
-vim.cmd.colorswheme("hybrid")
+vim.cmd.colorscheme("hybrid")
 
 -- enable nerdfont
 vim.g.have_nerd_font = true
