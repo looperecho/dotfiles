@@ -61,6 +61,13 @@ require('hybrid').setup({
 
 -- LSP
 vim.lsp.enable('basedpyright')
+vim.lsp.config('basedpyright', {
+    settings = {
+        ['basedpyright'] = {
+            typeCheckingMode = 'basic',
+        },
+    },
+})
 
 -- File Browsing
 require('oil').setup({
