@@ -1,0 +1,16 @@
+{
+  "plugins": {
+    "hybrid.nvim": {
+      "rev": "bd52073c4b2e357be0c5ad0d3bd0d07ca48773f7",
+      "src": "https://github.com/HoNamDuong/hybrid.nvim"
+    },
+    "nvim-lspconfig": {
+      "rev": "16812abf0e8d8175155f26143a8504e8253e92b0",
+      "src": "https://github.com/neovim/nvim-lspconfig"
+    },
+    "oil.nvim": {
+      "rev": "0fcc83805ad11cf714a949c98c605ed717e0b83e",
+      "src": "https://github.com/stevearc/oil.nvim"
+    }
+  }
+}
