@@ -4,5 +4,5 @@ vt = 1
 
 # The default session, also known as the greeter.
 [default_session]
-command = "cage -s -mlast -- regreet"
+command = "cage -d -s -mlast -- regreet"
 user = "greeter"

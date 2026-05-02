@@ -3,24 +3,30 @@ window > overlay > frame {
     border: none;
     background-color: transparent;
 }
+
+
+/* clock - container */
 window > overlay > frame:nth-child(3) {
-    margin-top: 100px;
+    margin-top: 30em;
 }
-/* Clock */
+/* clock - string */
 window > overlay > frame:nth-child(3) > label {
     color: rgba(255,255,255, 0.5);
-    font-size: 24px;
+    font-size: 100px;
+    font-weight: 200;
     text-transform: uppercase;
 }
-/* Buttons Container */
+
+
+/* buttons - container */
 window > overlay > box {
     margin-bottom: 100px;
 }
-/* Restart Button */
+/* button - restart */
 window > overlay > box > box > button:first-child {
     background-color: rgba(255,255,255,.2);
 }
-/* Power Off Button */
+/* button - power */
 window > overlay > box > box > button:nth-child(2) {
     background-color: rgba(255,100,100,.2);
 }
