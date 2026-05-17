@@ -64,17 +64,17 @@
     // ────────
     // mic-status
     // ────────
-    "custom/mic-activity": {
-        "exec": "~/.config/waybar/bin/mic-activity.sh",
-        "return-type": "json",
-        "format": "{icon}",
-        "format-icons": {
-            "silent": "󰍬",
-            "active": "󰍬",
-            "muted": "󰍭",
-            "unused": ""
-        }
-    },
+    // "custom/mic-activity": {
+    //     "exec": "~/.config/waybar/bin/mic-activity.sh",
+    //     "return-type": "json",
+    //     "format": "{icon}",
+    //     "format-icons": {
+    //         "silent": "󰍬",
+    //         "active": "󰍬",
+    //         "muted": "󰍭",
+    //         "unused": ""
+    //     }
+    // },
 
     // ────────
     // Notifications
