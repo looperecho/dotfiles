@@ -71,4 +71,4 @@ hl.layer_rule({ match = { class = "selection" }, no_anim = true })
 -- swaync / launchers: fade animation + blur + ignore_alpha
 hl.layer_rule({ match = { namespace = "(ulauncher)|(rofi)" }, animation    = "fadeLayers" })
 hl.layer_rule({ match = { namespace = "(ulauncher)|(rofi)|(swaync-control-center)|(swaync-notification-window)" }, ignore_alpha = 0.5 })
-hl.layer_rule({ match = { namespace = "(ulauncher)|(rofi)|(swaync-control-center)|(swaync-notification-window)" }, blur         = true })
+hl.layer_rule({ match = { namespace = "(ulauncher)|(rofi)|(swaync-control-center)|(swaync-notification-window)|(waybar)" }, blur         = true })
