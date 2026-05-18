@@ -17,7 +17,7 @@ hl.bind("CTRL + q",          hl.dsp.window.kill())
 -- Reloads
 hl.bind(subMod .. " + b",    hl.dsp.exec_cmd("killall waybar ; waybar & disown"))
 hl.bind(subMod .. " + s",    hl.dsp.exec_cmd("swaync-client -R && swaync-client -rs"))
-hl.bind(subMod .. " + h",    hl.dsp.exec_cmd("hyprctl reload"))
+hl.bind(subMod .. " + r",    hl.dsp.exec_cmd("hyprctl reload"))
 
 -- Screenshot
 hl.bind("Print",             hl.dsp.exec_cmd("~/.config/hypr/bin/screenshot.sh"))
