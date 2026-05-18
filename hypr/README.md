@@ -10,7 +10,7 @@ Keybind Table
 | Modifier      | Key                           | Action                            |
 | :------------ | :------------                 | :----------------                 |
 | **General**   |
-| `HYPER`       | `-`                           | Killactive                        |
+| `CTRL`        | `q`                           | Killactive                        |
 | `HYPER`       | `n`                           | Toggle Notification Center        |
 | `MEH`         | `b`                           | Reload Waybar                     |
 | `MEH`         | `s`                           | Reload Swaync                     |
@@ -27,13 +27,9 @@ Keybind Table
 | `ALT`         | `5`                           | Launch Spotify                    |
 | `ALT`         | `6`                           | Launch Discord                    |
 | **Layout**    |
-| `HYPER`       | `z`                           | Switch split method               |
 | `SUPER`       | `z`                           | Swap window split                 |
-| `SUPER`       | `p`                           | Toggle pseudo mode                | 
-| `SUPER`       | `m`                           | Toggle pseudo and resize width    |
-| `SUPER`       | `f`                           | Toggle floating & center          |
-| `SUPER`       | `F12`                         | Fake Fullscreen (Floating)        |
-| `MEH`         | `f`                           | Native Fullscreen                 |
+| `SUPER`       | `f`                           | Fullscreen (Maximize)             |
+| `MEH`         | `f`                           | Fullscreen (Native)               |
 | **Navigation**|
 | `HYPER`       | `←` / `a` / `h`               | Focus left                        |
 | `HYPER`       | `→` / `d` / `l`               | Focus right                       |
