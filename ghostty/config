@@ -4,7 +4,7 @@
 # Theme
 theme = Pnevma
 foreground = 9a9a9a
-background-opacity = .80
+background-opacity = .85
 window-padding-y = 0,0
 window-padding-balance = true
 window-padding-color = background
