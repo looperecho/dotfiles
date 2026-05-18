@@ -4,12 +4,12 @@
 -- ──────────────
 hl.config({
     general = {
-        gaps_in  = 10,
-        gaps_out = { top = 5, right = 10, bottom = 10, left = 10 },
+        gaps_in  = 5,
+        gaps_out = { top = 5, right = 16, bottom = 0, left = 16 },
         border_size = 3,
         col = {
-            active_border   = "rgba(9a9a9a33)",
-            inactive_border = "rgba(00000044)",
+            active_border   = "rgba(255, 255, 255, .5)",
+            inactive_border = "rgba(0, 0, 0, .5)",
         },
         resize_on_border = true,
         allow_tearing    = false,
@@ -26,7 +26,7 @@ hl.config({
         dim_special    = 0.5,
 
         shadow = {
-            enabled = true,
+            enabled = false,
         },
 
         blur = {
