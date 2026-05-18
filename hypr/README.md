@@ -14,7 +14,7 @@ Keybind Table
 | `HYPER`       | `n`                           | Toggle Notification Center        |
 | `MEH`         | `b`                           | Reload Waybar                     |
 | `MEH`         | `s`                           | Reload Swaync                     |
-| `MEH`         | `h`                           | Reload Hyprland                   |
+| `MEH`         | `r`                           | Reload Hyprland                   |
 | **Capturing** |
 |               | `Print`                       | Screenshot                        |
 | `SHIFT`       | `Print`                       | Toggle Screen Recording           |
