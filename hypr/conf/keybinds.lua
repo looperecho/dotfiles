@@ -12,7 +12,7 @@ local subMod  = "SHIFT + ALT + CTRL"
 -- GENERAL
 -- ──────────────
 -- Quit
-hl.bind("CTRL + q",          hl.dsp.window.kill())
+hl.bind("CTRL + q",          hl.dsp.window.close())
 
 -- Reloads
 hl.bind(subMod .. " + b",    hl.dsp.exec_cmd("killall waybar ; waybar & disown"))
