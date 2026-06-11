@@ -2,12 +2,12 @@
 
 -- TAG RULES
 -- ──────────────
-hl.window_rule({ match = { initial_class = "(firefox)|(zen)"                          }, tag = "+browser"  })
+hl.window_rule({ match = { initial_class = "(firefox)|(zen)|(^[Vv]ivaldi.*)"                              }, tag = "+browser"  })
 hl.window_rule({ match = { initial_class = "(Alacritty)|(org.wezfurlong.wezterm)|(com.mitchellh.ghostty)" }, tag = "+terminal" })
 hl.window_rule({ match = { initial_class = "(org.gnome.Nautilus)"                     }, tag = "+fileman"  })
 hl.window_rule({ match = { initial_class = "^[Ss]potify"                              }, tag = "+media"    })
 hl.window_rule({ match = { initial_class = "(^[Vv]esktop)|(^[Dd]iscord)"              }, tag = "+social"   })
-hl.window_rule({ match = { initial_class = "(steam_app_)(%d*)"                        }, tag = "+game"     })
+hl.window_rule({ match = { initial_class = "(steam_app_.*)"                           }, tag = "+game"     })
 
 -- WORKSPACE RULES
 -- ──────────────
