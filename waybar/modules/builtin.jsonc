@@ -28,6 +28,7 @@
         "format": "{initialClass}",
         "rewrite": {
             "firefox": "Firefox",
+            "vivaldi(.*)": "Vivaldi",
             "steam": "Steam",
             "(.*)ghostty": "Ghostty",
             "(.*)wezterm": "Wezterm",
@@ -44,6 +45,7 @@
         "rewrite": {
             "^.* - YouTube.*": "YouTube", // Negate long youtube titles
             "^(.*) — Mozilla Firefox$": "$1",
+            "^(.*) - Vivaldi$": "$1",
             "^(Steam)$": ""
         },
         "icon": false,
