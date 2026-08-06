@@ -8,12 +8,12 @@ function check_mute {
     if [ "$mute_state" = "Mute: yes" ]; then
         mic_status="Muted"
         priority_status="critical"
-        mic_icon="audio-input-microphone-muted"
+        mic_icon="audio-input-microphone-muted-symbolic"
         notify_audio_path="$AUDIO_SOURCE/source-off.wav"
     else
         mic_status="Live"
         priority_status="low"
-        mic_icon="microphone"
+        mic_icon="audio-input-microphone-symbolic"
         notify_audio_path="$AUDIO_SOURCE/source-on.wav"
     fi
 }
