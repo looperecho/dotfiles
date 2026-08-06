@@ -9,5 +9,5 @@ return {
     fileManager = "nautilus",
     media       = "spotify-launcher",
     social      = "discord",
-    menu        = "gapplication launch io.ulauncher.Ulauncher",
+    -- menu        = "gapplication launch io.ulauncher.Ulauncher",
 }
