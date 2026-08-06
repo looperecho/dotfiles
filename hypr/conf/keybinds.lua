@@ -8,6 +8,7 @@ local apps = require("conf/apps")
 local mainMod = "SUPER + SHIFT + ALT + CTRL"  -- "HYPER" key
 local moveMod = "SUPER"
 local subMod  = "SHIFT + ALT + CTRL"
+local ipc     = "noctalia msg "
 
 -- GENERAL
 -- ──────────────
@@ -26,12 +27,14 @@ hl.bind("Print",             hl.dsp.exec_cmd("~/.config/hypr/bin/screenshot.sh")
 hl.bind("SHIFT + Print",     hl.dsp.exec_cmd("~/.config/hypr/bin/wf-record-toggle.sh"))
 
 -- Notification Centre
-hl.bind(mainMod .. " + n",   hl.dsp.exec_cmd("swaync-client -t"))
+-- hl.bind(mainMod .. " + n",   hl.dsp.exec_cmd("swaync-client -t"))
+hl.bind(mainMod .. " + n",   hl.dsp.exec_cmd(ipc .. "panel-toggle control-center"))
 
 -- LAUNCHERS
 -- ──────────────
 -- bindr (fires on key release)
-hl.bind(mainMod .. " + space", hl.dsp.exec_cmd(apps.menu),     { release = true })
+-- hl.bind(mainMod .. " + space", hl.dsp.exec_cmd(apps.menu),     { release = true })
+hl.bind(mainMod .. " + Space", hl.dsp.exec_cmd(ipc .. "panel-toggle launcher"))
 hl.bind("ALT + 1",             hl.dsp.exec_cmd(apps.terminal))
 hl.bind("ALT + 2",             hl.dsp.exec_cmd(apps.browser))
 hl.bind("ALT + 3",             hl.dsp.exec_cmd(apps.fileManager))
