@@ -8,7 +8,7 @@ This is just a backup of my own personal linux configs.
     - Set workspaces for common apps
     - Special workspace for spotify and comms
     - Float and centre window for focus
-- **[noctalia](https://github.com/noctalia-dev)** - Shell
+- **[noctalia](https://github.com/noctalia-dev)** - Shell  
     [config](noctalia)
     - Noctalia handles bar, launcher, widgets, notification daemon.
 
