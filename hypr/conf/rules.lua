@@ -11,6 +11,11 @@ hl.window_rule({ match = { initial_class = "(steam_app_.*)"                     
 
 -- WORKSPACE RULES
 -- ──────────────
+hl.workspace_rule({ workspace="1", persistent = true })
+hl.workspace_rule({ workspace="2", persistent = true })
+hl.workspace_rule({ workspace="3", persistent = true })
+hl.workspace_rule({ workspace="4", persistent = true })
+
 hl.window_rule({ match = { tag = "terminal" },                workspace = "1"  })
 hl.window_rule({ match = { tag = "browser"  },                workspace = "2"  })
 hl.window_rule({ match = { tag = "fileman"  },                workspace = "3"  })
@@ -24,8 +29,8 @@ hl.window_rule({ match = { tag = "social" }, workspace = "special:magic" })
 
 -- FLOATING WINDOWS
 -- ──────────────
--- Border style for floating windows
-hl.window_rule({ match = { float = true }, border_color = "rgba(9a9a9a99)" })
+-- Noctalia Settings UI
+hl.window_rule({ match = { class = "dev.noctalia.Noctalia" }, float = true, size = { 1080, 920 }, })
 
 -- Nautilus Previewer
 hl.window_rule({ match = { class = "org.gnome.NautilusPreviewer" }, float = true })
@@ -50,11 +55,13 @@ hl.window_rule({
     decorate = false,
 })
 
--- Generic floating popups: centre them
+
+-- Generic floating popups: centre them, color border
 hl.window_rule({
     name  = "center-popups",
     match = { float = true },
     center = true,
+    border_color = "rgba(9a9a9a99)",
 })
 
 -- SPECIFIC WINDOW RULES
@@ -68,7 +75,17 @@ hl.window_rule({ match = { tag = "game" }, rounding    = 0 })
 -- slurp selection overlay: no animation
 hl.layer_rule({ match = { class = "selection" }, no_anim = true })
 
--- swaync / launchers: fade animation + blur + ignore_alpha
-hl.layer_rule({ match = { namespace = "(ulauncher)|(rofi)" }, animation    = "fadeLayers" })
-hl.layer_rule({ match = { namespace = "(ulauncher)|(rofi)|(swaync-control-center)|(swaync-notification-window)" }, ignore_alpha = 0.5 })
-hl.layer_rule({ match = { namespace = "(ulauncher)|(rofi)|(swaync-control-center)|(swaync-notification-window)|(waybar)" }, blur         = true })
+-- swaync / launchers: fade animation + blur + ignore_alpha (no longer used)
+-- hl.layer_rule({ match = { namespace = "(ulauncher)|(rofi)" }, animation = "fadeLayers" })
+-- hl.layer_rule({ match = { namespace = "(ulauncher)|(rofi)|(swaync-control-center)|(swaync-notification-window)" }, ignore_alpha = 0.5 })
+-- hl.layer_rule({ match = { namespace = "(ulauncher)|(rofi)|(swaync-control-center)|(swaync-notification-window)|(waybar)" }, blur = true })
+
+-- Noctalia
+hl.layer_rule({
+  name = "noctalia",
+  match = { namespace = "^noctalia-(bar-.+|notification|dock|panel|attached-panel|osd|window-switcher)$" },
+  no_anim = true,
+  ignore_alpha = 0.2,
+  blur = true,
+  blur_popups = true,
+})
