@@ -9,6 +9,8 @@ window-padding-y = 0,0
 window-padding-balance = true
 window-padding-color = background
 window-theme = ghostty
+font-size = 12
+font-family = "Hack Nerd Font"
 
 # Keybinds
 keybind = ctrl+w=close_surface
