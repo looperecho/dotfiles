@@ -1,0 +1,181 @@
+# -------- General
+[accessibility]
+ui_scale = 1.25
+
+[shell]
+button_borders = false
+card_borders = false
+input_borders = false
+clipboard_enabled = false
+clipboard_keep_from_closed_apps = false
+font_family = "Inter"
+polkit_agent = true
+date_format = "%a %d %b"
+
+    [shell.animation]
+    speed = 2.0
+
+    [shell.launcher]
+    categories = false
+
+    [shell.launcher.providers.windows]
+    prefix = "win"
+
+    [shell.launcher.providers.session]
+    prefix = "sm"
+
+    [shell.panel]
+    launcher_placement = "attached"
+    open_near_click_control_center = true
+    transparency_mode = "glass"
+
+    [shell.screenshot]
+    save_to_file = false
+
+[keybinds]
+down    = [ "Down", "Ctrl+j" ]
+left    = [ "Left", "Ctrl+h" ]
+right   = [ "Right", "Ctrl+l" ]
+up      = [ "Up", "Ctrl+k" ]
+
+[notification]
+enable_daemon = true
+background_opacity = 0.4
+show_actions = false
+show_app_name = false
+
+[osd]
+background_opacity = 0.4
+
+    [osd.kinds]
+    brightness = false
+    caffeine = false
+    media = false
+    nightlight = false
+    power_profile = false
+
+[theme]
+builtin = "Tokyo-Night"
+community_palette = "Mine"
+mode = "dark"
+source = "wallpaper"
+wallpaper_scheme = "muted"
+
+[control_center]
+hidden_tabs = [ "monitor", "power", "screen-time" ]
+show_shortcut_labels = false
+sidebar_section = "none"
+
+    [control_center.calendar]
+    show_events_card = false
+
+    [[control_center.shortcuts]]
+    type = "media"
+
+    [[control_center.shortcuts]]
+    type = "notification"
+
+    [[control_center.shortcuts]]
+    type = "wifi"
+
+    [[control_center.shortcuts]]
+    type = "bluetooth"
+
+
+[wallpaper]
+directory = "/home/recoil/.repo/wallpapers"
+transition = [ "fade" ]
+
+    [wallpaper.default]
+    path = "/home/recoil/.repo/wallpapers/mountain-night.jpg"
+
+[weather]
+enabled = true
+
+[location]
+auto_locate = true
+
+
+# -------- Bar
+[bar.default]
+start = [ "tray", "cpu", "gpu", "active_window" ]
+center = [ "workspaces" ]
+end = [ "media", "privacy", "volume", "clock", "notifications" ]
+background_opacity = 0.7
+concave_edge_corners = false
+margin_ends = 0
+padding = 16
+radius = 0
+scale = 1.25
+thickness = 38
+widget_spacing = 22
+color = "#D0D0D0"
+
+[widget.tray]
+drawer = true
+drawer_columns = 1
+
+[widget.cpu]
+type = "sysmon"
+color = "#92BCD9"
+show_glyph = false
+stat = "cpu_temp"
+visualization = "none"
+
+[widget.gpu]
+type = "sysmon"
+color = "#79A980"
+show_glyph = false
+stat = "gpu_temp"
+visualization = "none"
+
+[widget.active_window]
+display = "text_only"
+icon_size = 16
+interactive = false
+max_length = 360
+
+[widget.workspaces]
+anchor = true
+empty_color = "on_surface_variant"
+pill_scale = 0.8
+active_pill_size = 2.0
+show_labels = false
+
+[widget.media]
+artist_first = true
+hide_album_art = true
+hide_when_no_media = true
+max_length = 360
+title_scroll = "on_hover"
+
+[widget.media.actions]
+left = "media toggle"
+right = "panel-toggle control-center media"
+scroll_down = "none"
+scroll_up = "none"
+
+[widget.privacy]
+active_color = "#D7AF87"
+capsule = true
+hide_inactive = true
+icon_spacing = 14
+
+[widget.bluetooth]
+hide_when_no_connected_device = true
+
+[widget.network]
+show_label = false
+
+[widget.volume]
+show_label = false
+
+[widget.notifications]
+capsule = true
+
+
+[system.monitor]
+cpu_temp_activity_threshold = 70
+cpu_temp_critical_threshold = 90
+gpu_temp_activity_threshold = 85
+gpu_temp_critical_threshold = 95
