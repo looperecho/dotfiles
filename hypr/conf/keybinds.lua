@@ -16,8 +16,6 @@ local ipc     = "noctalia msg "
 hl.bind("CTRL + q",          hl.dsp.window.close())
 
 -- Reloads
-hl.bind(subMod .. " + b",    hl.dsp.exec_cmd("killall waybar ; waybar & disown"))
-hl.bind(subMod .. " + s",    hl.dsp.exec_cmd("swaync-client -R && swaync-client -rs"))
 hl.bind(subMod .. " + r",    hl.dsp.exec_cmd("hyprctl reload"))
 
 -- Screenshot
@@ -27,13 +25,10 @@ hl.bind("Print",             hl.dsp.exec_cmd("~/.config/hypr/bin/screenshot.sh")
 hl.bind("SHIFT + Print",     hl.dsp.exec_cmd("~/.config/hypr/bin/wf-record-toggle.sh"))
 
 -- Notification Centre
--- hl.bind(mainMod .. " + n",   hl.dsp.exec_cmd("swaync-client -t"))
 hl.bind(mainMod .. " + n",   hl.dsp.exec_cmd(ipc .. "panel-toggle control-center"))
 
 -- LAUNCHERS
 -- ──────────────
--- bindr (fires on key release)
--- hl.bind(mainMod .. " + space", hl.dsp.exec_cmd(apps.menu),     { release = true })
 hl.bind(mainMod .. " + Space", hl.dsp.exec_cmd(ipc .. "panel-toggle launcher"))
 hl.bind("ALT + 1",             hl.dsp.exec_cmd(apps.terminal))
 hl.bind("ALT + 2",             hl.dsp.exec_cmd(apps.browser))
@@ -42,7 +37,7 @@ hl.bind("ALT + 4",             hl.dsp.exec_cmd("steam"))
 hl.bind("ALT + 5",             hl.dsp.exec_cmd(apps.media))
 hl.bind("ALT + 6",             hl.dsp.exec_cmd(apps.social))
 
--- Rofi -> on release
+-- Rofi
 hl.bind("SUPER + space",       hl.dsp.exec_cmd("pkill rofi || rofi -show drun"), { release = true })
 
 -- LAYOUT
@@ -92,20 +87,19 @@ hl.bind(mainMod .. " + comma",  hl.dsp.focus({ workspace = "-1" }))
 hl.bind(mainMod .. " + period", hl.dsp.focus({ workspace = "+1" }))
 -- Cycle (active)
 hl.bind(mainMod .. " + Tab",    hl.dsp.focus({ workspace = "e+1" }))
-hl.bind("ALT + Tab",            hl.dsp.focus({ workspace = "e+1" }))
+hl.bind("ALT + Tab", hl.dsp.exec_cmd(ipc .. "window-switcher"))
 -- Mouse scroll
 hl.bind(mainMod .. " + mouse_down", hl.dsp.focus({ workspace = "+1" }))
 hl.bind(mainMod .. " + mouse_up",   hl.dsp.focus({ workspace = "-1" }))
 
 -- MOVEMENT — Windows
--- ──────────────
+
 -- Arrow keys
 hl.bind(moveMod .. " + left",  hl.dsp.window.move({ direction = "l" }))
 hl.bind(moveMod .. " + right", hl.dsp.window.move({ direction = "r" }))
 hl.bind(moveMod .. " + up",    hl.dsp.window.move({ direction = "u" }))
 hl.bind(moveMod .. " + down",  hl.dsp.window.move({ direction = "d" }))
 -- WASD — movewindoworgroup (moves through groups too)
--- NOTE: if hl.dsp.window.move doesn't support or_group, check the Dispatchers wiki page
 hl.bind(moveMod .. " + a",     hl.dsp.window.move({ direction = "l", or_group = true }))
 hl.bind(moveMod .. " + d",     hl.dsp.window.move({ direction = "r", or_group = true }))
 hl.bind(moveMod .. " + w",     hl.dsp.window.move({ direction = "u", or_group = true }))
@@ -173,4 +167,5 @@ hl.bind("XF86AudioPause", hl.dsp.exec_cmd("playerctl play-pause"),  { locked = t
 hl.bind("XF86AudioPlay",  hl.dsp.exec_cmd("playerctl play-pause"),  { locked = true })
 hl.bind("XF86AudioPrev",  hl.dsp.exec_cmd("playerctl previous"),    { locked = true })
 -- Mic toggle
-hl.bind("F10",            hl.dsp.exec_cmd("~/.config/hypr/bin/toggle-mic-mute.sh"))
+hl.bind("F10",            hl.dsp.exec_cmd("~/.repo/bin/es2-mic toggle"))
+hl.bind("F12", hl.dsp.send_shortcut({ mods = "CTRL + SHIFT", key = "m", window = "class:(^discord)$" }), { non_consuming = true})
