@@ -5,9 +5,8 @@
 -- ──────────────
 return {
     terminal    = "ghostty",
-    browser     = "firefox",
+    browser     = "zen",
     fileManager = "nautilus",
     media       = "spotify-launcher",
     social      = "discord",
-    -- menu        = "gapplication launch io.ulauncher.Ulauncher",
 }
