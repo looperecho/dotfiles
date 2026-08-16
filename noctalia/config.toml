@@ -1,3 +1,15 @@
+[[plugins.source]]
+name = "local"
+kind = "path"
+location = "~/.config/noctalia/plugins"
+enabled = true
+
+[plugins]
+enabled = [ "recoil/mic-status" ]
+[plugin_settings."recoil/mic-status"]
+capture_color = "#D7AF87"
+muted_color = "tertiary"
+
 # -------- General
 [accessibility]
 ui_scale = 1.25
@@ -11,26 +23,20 @@ clipboard_keep_from_closed_apps = false
 font_family = "Inter"
 polkit_agent = true
 date_format = "%a %d %b"
-
-    [shell.animation]
-    speed = 2.0
-
-    [shell.launcher]
-    categories = false
-
-    [shell.launcher.providers.windows]
-    prefix = "win"
-
-    [shell.launcher.providers.session]
-    prefix = "sm"
-
-    [shell.panel]
-    launcher_placement = "attached"
-    open_near_click_control_center = true
-    transparency_mode = "glass"
-
-    [shell.screenshot]
-    save_to_file = false
+[shell.animation]
+speed = 2.0
+[shell.launcher]
+categories = false
+[shell.launcher.providers.windows]
+prefix = "win"
+[shell.launcher.providers.session]
+prefix = "sm"
+[shell.panel]
+launcher_placement = "attached"
+open_near_click_control_center = true
+transparency_mode = "glass"
+[shell.screenshot]
+save_to_file = false
 
 [keybinds]
 down    = [ "Down", "Ctrl+j" ]
@@ -46,13 +52,15 @@ show_app_name = false
 
 [osd]
 background_opacity = 0.4
-
-    [osd.kinds]
-    brightness = false
-    caffeine = false
-    media = false
-    nightlight = false
-    power_profile = false
+position = "top_right"
+position_vertical = "center_right"
+orientation = "vertical"
+[osd.kinds]
+brightness = false
+caffeine = false
+media = false
+nightlight = false
+power_profile = false
 
 [theme]
 builtin = "Tokyo-Night"
@@ -65,29 +73,22 @@ wallpaper_scheme = "muted"
 hidden_tabs = [ "monitor", "power", "screen-time" ]
 show_shortcut_labels = false
 sidebar_section = "none"
-
-    [control_center.calendar]
-    show_events_card = false
-
-    [[control_center.shortcuts]]
-    type = "media"
-
-    [[control_center.shortcuts]]
-    type = "notification"
-
-    [[control_center.shortcuts]]
-    type = "wifi"
-
-    [[control_center.shortcuts]]
-    type = "bluetooth"
-
+[control_center.calendar]
+show_events_card = false
+[[control_center.shortcuts]]
+type = "media"
+[[control_center.shortcuts]]
+type = "notification"
+[[control_center.shortcuts]]
+type = "wifi"
+[[control_center.shortcuts]]
+type = "bluetooth"
 
 [wallpaper]
 directory = "/home/recoil/.repo/wallpapers"
 transition = [ "fade" ]
-
-    [wallpaper.default]
-    path = "/home/recoil/.repo/wallpapers/mountain-night.jpg"
+[wallpaper.default]
+path = "/home/recoil/.repo/wallpapers/mountain-night.jpg"
 
 [weather]
 enabled = true
@@ -100,7 +101,7 @@ auto_locate = true
 [bar.default]
 start = [ "tray", "cpu", "gpu", "active_window" ]
 center = [ "workspaces" ]
-end = [ "media", "privacy", "volume", "clock", "notifications" ]
+end = [ "media", "group:p1", "volume", "clock", "notifications" ]
 background_opacity = 0.7
 concave_edge_corners = false
 margin_ends = 0
@@ -110,6 +111,15 @@ scale = 1.25
 thickness = 38
 widget_spacing = 22
 color = "#D0D0D0"
+[[bar.default.capsule_group]]
+accordion = false
+accordion_direction = "end"
+enabled = true
+id = "p1"
+members = [ "mic-status", "privacy" ]
+opacity = 1.0
+padding = 6.0
+widget_spacing = 12
 
 [widget.tray]
 drawer = true
@@ -155,11 +165,18 @@ right = "panel-toggle control-center media"
 scroll_down = "none"
 scroll_up = "none"
 
+[widget.mic-status]
+type = "recoil/mic-status:mic-status"
+capsule = false
+left = "mic-mute"
+
 [widget.privacy]
 active_color = "#D7AF87"
-capsule = true
+capsule = false
 hide_inactive = true
 icon_spacing = 14
+[shell.privacy]
+mic_filter_regex    = ".*"
 
 [widget.bluetooth]
 hide_when_no_connected_device = true
@@ -169,10 +186,12 @@ show_label = false
 
 [widget.volume]
 show_label = false
+[widget.volume.actions]
+right = "panel-toggle control-center audio"
+left = "volume-mute"
 
 [widget.notifications]
 capsule = true
-
 
 [system.monitor]
 cpu_temp_activity_threshold = 70
