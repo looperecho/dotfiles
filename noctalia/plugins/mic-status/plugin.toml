@@ -1,0 +1,30 @@
+id = "recoil/mic-status"
+name = "Mic Status"
+version = "0.2.0"
+plugin_api = 9
+author = "recoil"
+license = "MIT"
+
+dependencies = ["pactl"]
+tags = ["audio", "privacy", "bar"]
+icon = "microphone"
+
+description = "Combined microphone capture and system mute indicator."
+
+[[widget]]
+id = "mic-status"
+entry = "mic-status.luau"
+
+[[setting]]
+key = "capture_color"
+type = "color"
+label_key = "settings.capture_color.label"
+description_key = "settings.capture_color.description"
+default = "#D7AF87"
+
+[[setting]]
+key = "muted_color"
+type = "color"
+label_key = "settings.muted_color.label"
+description_key = "settings.muted_color.description"
+default = "error"

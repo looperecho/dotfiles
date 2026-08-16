@@ -1,0 +1,12 @@
+{
+  "settings": {
+    "capture_color": {
+      "label": "Capture Color",
+      "description": "Color shown while an application is using the microphone."
+    },
+    "muted_color": {
+      "label": "Muted Color",
+      "description": "Color shown while the system microphone is muted."
+    }
+  }
+}
