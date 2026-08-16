@@ -25,11 +25,11 @@ function toggle_mute {
 }
 
 function notify {
-    notify-send -u $priority_status \
-        -h boolean:transient:true \
-        "Mic Input" \
-        -i $mic_icon \
-        "$mic_status" ; \
+    # notify-send -u $priority_status \
+    #     -h boolean:transient:true \
+    #     "Mic Input" \
+    #     -i $mic_icon \
+    #     "$mic_status" ; \
     paplay $notify_audio_path
 }
 
