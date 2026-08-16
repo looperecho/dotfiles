@@ -13,15 +13,9 @@ hl.on("hyprland.start", function()
     -- Sys Utils
     -- ──────────────
     hl.exec_cmd("noctalia")
-    -- hl.exec_cmd("waybar &")
-    -- hl.exec_cmd("hyprpaper &")
-    -- hl.exec_cmd("swaync &")
-    -- hl.exec_cmd("nm-applet &")
     hl.exec_cmd("export IBUS_NO_SNOOPER=1 && nohup ibus-daemon -drx >/dev/null 2>&1 &")
     -- hl.exec_cmd("~/.config/hypr/bin/language_status.sh")
 
     -- Apps
     -- ──────────────
-    -- hl.exec_cmd("gapplication launch io.ulauncher.Ulauncher")
-    -- hl.exec_cmd("ulauncher-toggle &")
 end)
