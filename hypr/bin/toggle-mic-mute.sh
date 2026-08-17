@@ -1,4 +1,5 @@
 #! /bin/bash
+# Toggles defualt source audio with notification and audio - currently unused in favour of noctalia OSD
 
 MIC_SOURCE=$(pactl info | grep "Default Source" | cut -d: -f2 | xargs)
 AUDIO_SOURCE="$HOME/.repo/audio"
