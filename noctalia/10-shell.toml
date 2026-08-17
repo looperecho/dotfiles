@@ -1,0 +1,86 @@
+# =============================================================================
+# Shell
+# =============================================================================
+
+[accessibility]
+ui_scale = 1.25
+
+
+# -----------------------------------------------------------------------------
+# General
+# -----------------------------------------------------------------------------
+
+[shell]
+button_borders = false
+card_borders = false
+input_borders = false
+
+clipboard_enabled = false
+clipboard_keep_from_closed_apps = false
+
+font_family = "Inter"
+polkit_agent = true
+date_format = "%a %d %b"
+
+[shell.animation]
+speed = 2.0
+
+[shell.launcher]
+categories = false
+
+[shell.launcher.providers.windows]
+prefix = "win"
+
+[shell.launcher.providers.session]
+prefix = "sm"
+
+[shell.panel]
+launcher_placement = "attached"
+open_near_click_control_center = true
+transparency_mode = "glass"
+
+[shell.screenshot]
+save_to_file = false
+
+[shell.privacy]
+mic_filter_regex = ".*"
+
+
+# -----------------------------------------------------------------------------
+# Keybinds
+# -----------------------------------------------------------------------------
+
+[keybinds]
+down  = ["Down", "Ctrl+j"]
+left  = ["Left", "Ctrl+h"]
+right = ["Right", "Ctrl+l"]
+up    = ["Up", "Ctrl+k"]
+
+
+# -----------------------------------------------------------------------------
+# Notifications
+# -----------------------------------------------------------------------------
+
+[notification]
+enable_daemon = true
+background_opacity = 0.4
+show_actions = false
+show_app_name = false
+
+
+# -----------------------------------------------------------------------------
+# OSD
+# -----------------------------------------------------------------------------
+
+[osd]
+background_opacity = 0.4
+position = "top_right"
+position_vertical = "center_right"
+orientation = "vertical"
+
+[osd.kinds]
+brightness = false
+caffeine = false
+media = false
+nightlight = false
+power_profile = false

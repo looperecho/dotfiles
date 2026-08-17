@@ -1,0 +1,124 @@
+# =============================================================================
+# Widgets
+# =============================================================================
+
+# -----------------------------------------------------------------------------
+# Tray
+# -----------------------------------------------------------------------------
+
+[widget.tray]
+drawer = true
+drawer_columns = 1
+
+
+# -----------------------------------------------------------------------------
+# System Monitor
+# -----------------------------------------------------------------------------
+
+[widget.cpu]
+type = "sysmon"
+color = "#92BCD9"
+show_glyph = false
+stat = "cpu_temp"
+visualization = "none"
+
+[widget.gpu]
+type = "sysmon"
+color = "#79A980"
+show_glyph = false
+stat = "gpu_temp"
+visualization = "none"
+
+[system.monitor]
+cpu_temp_activity_threshold = 70
+cpu_temp_critical_threshold = 90
+
+gpu_temp_activity_threshold = 85
+gpu_temp_critical_threshold = 95
+
+# -----------------------------------------------------------------------------
+# Active Window
+# -----------------------------------------------------------------------------
+
+[widget.active_window]
+display = "text_only"
+icon_size = 16
+interactive = false
+max_length = 360
+
+
+# -----------------------------------------------------------------------------
+# Workspaces
+# -----------------------------------------------------------------------------
+
+[widget.workspaces]
+anchor = true
+empty_color = "on_surface_variant"
+pill_scale = 0.8
+active_pill_size = 2.0
+show_labels = false
+
+
+# -----------------------------------------------------------------------------
+# Media
+# -----------------------------------------------------------------------------
+
+[widget.media]
+artist_first = true
+hide_album_art = true
+hide_when_no_media = true
+max_length = 360
+title_scroll = "on_hover"
+
+[widget.media.actions]
+left = "media toggle"
+right = "panel-toggle control-center media"
+scroll_down = "none"
+scroll_up = "none"
+
+
+# -----------------------------------------------------------------------------
+# Microphone / Privacy
+# -----------------------------------------------------------------------------
+
+[widget.mic-status]
+type = "recoil/mic-status:mic-status"
+capsule = false
+left = "mic-mute"
+
+[widget.privacy]
+active_color = "#D7AF87"
+capsule = false
+hide_inactive = true
+icon_spacing = 14
+
+
+# -----------------------------------------------------------------------------
+# Connectivity
+# -----------------------------------------------------------------------------
+
+[widget.bluetooth]
+hide_when_no_connected_device = true
+
+[widget.network]
+show_label = false
+
+
+# -----------------------------------------------------------------------------
+# Volume
+# -----------------------------------------------------------------------------
+
+[widget.volume]
+show_label = false
+
+[widget.volume.actions]
+left = "volume-mute"
+right = "panel-toggle control-center audio"
+
+
+# -----------------------------------------------------------------------------
+# Notifications
+# -----------------------------------------------------------------------------
+
+[widget.notifications]
+capsule = true

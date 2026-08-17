@@ -1,0 +1,28 @@
+# =============================================================================
+# Control Center
+# =============================================================================
+
+[control_center]
+hidden_tabs = ["monitor", "power", "screen-time"]
+show_shortcut_labels = false
+sidebar_section = "none"
+
+[control_center.calendar]
+show_events_card = false
+
+
+# -----------------------------------------------------------------------------
+# Shortcuts
+# -----------------------------------------------------------------------------
+
+[[control_center.shortcuts]]
+type = "media"
+
+[[control_center.shortcuts]]
+type = "notification"
+
+[[control_center.shortcuts]]
+type = "wifi"
+
+[[control_center.shortcuts]]
+type = "bluetooth"

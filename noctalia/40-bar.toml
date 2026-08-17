@@ -1,0 +1,57 @@
+# =============================================================================
+# Bar
+# =============================================================================
+
+[bar.default]
+start = [
+    "tray",
+    "cpu",
+    "gpu",
+    "active_window",
+]
+
+center = [
+    "workspaces",
+]
+
+end = [
+    "media",
+    "group:p1",
+    "volume",
+    "clock",
+    "notifications",
+]
+
+background_opacity = 0.7
+concave_edge_corners = false
+
+margin_ends = 0
+padding = 16
+radius = 0
+
+scale = 1.25
+thickness = 38
+widget_spacing = 22
+
+color = "#D0D0D0"
+
+
+# -----------------------------------------------------------------------------
+# Groups
+# -----------------------------------------------------------------------------
+
+[[bar.default.capsule_group]]
+id = "p1"
+enabled = true
+
+members = [
+    "mic-status",
+    "privacy",
+]
+
+accordion = false
+accordion_direction = "end"
+
+opacity = 1.0
+padding = 6.0
+widget_spacing = 12

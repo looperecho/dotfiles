@@ -1,0 +1,16 @@
+# =============================================================================
+# Plugins
+# =============================================================================
+
+[[plugins.source]]
+name = "local"
+kind = "path"
+location = "~/.config/noctalia/plugins"
+enabled = true
+
+[plugins]
+enabled = ["recoil/mic-status"]
+
+[plugin_settings."recoil/mic-status"]
+capture_color = "#D7AF87"
+muted_color = "tertiary"
