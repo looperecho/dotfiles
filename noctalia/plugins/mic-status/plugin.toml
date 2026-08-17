@@ -1,8 +1,8 @@
-id = "recoil/mic-status"
+id = "looperecho/mic-status"
 name = "Mic Status"
 version = "0.2.0"
 plugin_api = 9
-author = "recoil"
+author = "looperecho"
 license = "MIT"
 
 dependencies = ["pactl"]
