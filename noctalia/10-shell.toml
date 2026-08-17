@@ -45,6 +45,8 @@ save_to_file = false
 [shell.privacy]
 mic_filter_regex = ".*"
 
+[shell.mpris]
+blacklist = ["zen"]
 
 # -----------------------------------------------------------------------------
 # Keybinds
