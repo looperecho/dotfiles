@@ -1,13 +1,12 @@
 #!/bin/bash
-#
 # Screenshot with grim, slurp and swappy
-#
 
 file_path="$HOME/Pictures/Screenshots/$(date +"%Y-%m-%d_%H-%M").png"
 file_name=$(basename ${file_path})
 
 # Function to notify after swappy
 swappy_notify() {
+    # save to files
     if [ -f $file_path ]; then
         notify-send -u normal \
             -a "Captures" \
@@ -15,6 +14,7 @@ swappy_notify() {
             "Screenshot" \
             "Saved as: \n$file_name"
 
+    # copy to clipboard
     elif [ $(wl-paste -l) == "image/png" ]; then
         notify-send -u low \
             -a "Captures" \
