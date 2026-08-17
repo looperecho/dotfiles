@@ -19,11 +19,11 @@ wallpaper_scheme = "muted"
 # -----------------------------------------------------------------------------
 
 [wallpaper]
-directory = "/home/recoil/.repo/wallpapers"
+directory = "~/.repo/wallpapers"
 transition = ["fade"]
 
 [wallpaper.default]
-path = "/home/recoil/.repo/wallpapers/mountain-night.jpg"
+path = "~/.repo/wallpapers/mountain-night.jpg"
 
 
 # -----------------------------------------------------------------------------
