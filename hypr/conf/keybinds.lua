@@ -157,10 +157,9 @@ hl.bind(moveMod .. "x",    hl.dsp.window.move({ workspace = "special:magic" }))
 
 -- MULTIMEDIA
 -- ──────────────
-hl.bind("XF86AudioRaiseVolume", hl.dsp.exec_cmd("wpctl set-volume -l 1 @DEFAULT_AUDIO_SINK@ 5%+"), { repeating = true })
-hl.bind("XF86AudioLowerVolume", hl.dsp.exec_cmd("wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-"),      { repeating = true })
-hl.bind("XF86AudioMute",        hl.dsp.exec_cmd("wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"),     { repeating = true })
-hl.bind("XF86AudioMicMute",     hl.dsp.exec_cmd("wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle"),   { repeating = true })
+hl.bind("XF86AudioRaiseVolume", hl.dsp.exec_cmd(ipc .. "volume-up"),    { repeating = true })
+hl.bind("XF86AudioLowerVolume", hl.dsp.exec_cmd(ipc .. "volume-down"),  { repeating = true })
+hl.bind("XF86AudioMute",        hl.dsp.exec_cmd(ipc .. "volume-mute"),  { repeating = true })
 -- Playerctl (locked -> works on lockscreen)
 hl.bind("XF86AudioNext",  hl.dsp.exec_cmd(ipc .. "media next"),     { locked = true })
 hl.bind("XF86AudioPause", hl.dsp.exec_cmd(ipc .. "media toggle"),   { locked = true })
@@ -168,4 +167,5 @@ hl.bind("XF86AudioPlay",  hl.dsp.exec_cmd(ipc .. "media toggle"),   { locked = t
 hl.bind("XF86AudioPrev",  hl.dsp.exec_cmd(ipc .. "media previous"), { locked = true })
 -- Mic toggle
 hl.bind("F10",            hl.dsp.exec_cmd("~/.repo/bin/es2-mic toggle"))
+-- mute discord
 hl.bind("F12", hl.dsp.send_shortcut({ mods = "CTRL + SHIFT", key = "m", window = "class:(^discord)$" }), { non_consuming = true})
