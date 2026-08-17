@@ -45,7 +45,7 @@ hl.window_rule({
     opacity = "1",
 })
 
--- iBus popup
+-- iBus popup, I'm not using this at the moment
 hl.window_rule({
     name  = "ibus-popup",
     match = { title = "ibus-ui-gtk3" },
