@@ -82,7 +82,7 @@ scroll_up = "none"
 # -----------------------------------------------------------------------------
 
 [widget.mic-status]
-type = "recoil/mic-status:mic-status"
+type = "looperecho/mic-status:mic-status"
 capsule = false
 left = "mic-mute"
 
