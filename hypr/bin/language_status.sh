@@ -1,5 +1,6 @@
 #!/bin/bash
 # Monitors input language
+# Currently not used but keeping this around because I might use this in a noctalia plugin at some point
 
 last_engine=""
 
