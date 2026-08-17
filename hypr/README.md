@@ -1,5 +1,6 @@
 # Hyprland Keybinds  
 Define Modifier Keys  
+
 **HYPER**  
 `SUPER+SHIFT+CTRL+ALT`  
 
@@ -10,10 +11,8 @@ Keybind Table
 | Modifier      | Key                           | Action                            |
 | :------------ | :------------                 | :----------------                 |
 | **General**   |
-| `CTRL`        | `q`                           | Killactive                        |
-| `HYPER`       | `n`                           | Toggle Notification Center        |
-| `MEH`         | `b`                           | Reload Waybar                     |
-| `MEH`         | `s`                           | Reload Swaync                     |
+| `CTRL`        | `q`                           | Close Active Window               |
+| `HYPER`       | `n`                           | Toggle Control Center             |
 | `MEH`         | `r`                           | Reload Hyprland                   |
 | **Capturing** |
 |               | `Print`                       | Screenshot                        |
@@ -47,11 +46,6 @@ Keybind Table
 | `SUPER`       | `1` - `0`                     | Move window to workspace `1-10`   |
 | `SUPER`       | `e` / `.`                     | Move window to next workspace     |
 | `SUPER`       | `q` / `,`                     | Move window to previous workspace |
-|**Groups**     |
-| `MEH`         | `g`                           | Toggle Groups                     |
-| `HYPER`       | `page_up`                     | Focus previous tab                |
-| `HYPER`       | `page_down`                   | Focus next tab                    |
-| `SUPER`       | `a`                           | Move window into group left       |
-| `SUPER`       | `d`                           | Move window into group right      |
-| `SUPER`       | `w`                           | Move window into group up         |
-| `SUPER`       | `s`                           | Move window into group down       |
+| **Other**     |
+|               | `F10`                         | Mute Mic                          |
+|               | `f`                           | Mute Discord (Wayland)            |
