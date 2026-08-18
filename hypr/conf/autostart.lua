@@ -13,7 +13,7 @@ hl.on("hyprland.start", function()
     -- Sys Utils
     -- ──────────────
     hl.exec_cmd("noctalia")
-    hl.exec_cmd("export IBUS_NO_SNOOPER=1 && nohup ibus-daemon -drx >/dev/null 2>&1 &")
+    -- hl.exec_cmd("export IBUS_NO_SNOOPER=1 && nohup ibus-daemon -drx >/dev/null 2>&1 &")
     -- hl.exec_cmd("~/.config/hypr/bin/language_status.sh")
 
     -- Apps
