@@ -68,6 +68,7 @@ enable_daemon = true
 background_opacity = 0.4
 show_actions = false
 show_app_name = false
+history_retention_hours = 24
 
 
 # -----------------------------------------------------------------------------
