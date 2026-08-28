@@ -25,7 +25,8 @@ transition = ["fade"]
 [wallpaper.default]
 path = "~/.repo/wallpapers/mountain-night.jpg"
 
-
+[backdrop]
+enabled        = true
 # -----------------------------------------------------------------------------
 # Location & Weather
 # -----------------------------------------------------------------------------
