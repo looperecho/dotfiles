@@ -22,6 +22,8 @@ font_family = "Inter"
 polkit_agent = true
 date_format = "%a %d %b"
 
+niri_overview_type_to_launch_enabled = true
+
 [shell.animation]
 speed = 2.0
 
