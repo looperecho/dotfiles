@@ -83,8 +83,6 @@ scroll_up = "none"
 
 [widget.mic-status]
 type = "looperecho/mic-status:mic-status"
-capsule = false
-left = "mic-mute"
 
 [widget.privacy]
 active_color = "#D7AF87"
