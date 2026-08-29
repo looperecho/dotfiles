@@ -1,0 +1,48 @@
+[display]
+show_time = true
+time_format = "%H:%M"
+greeting = ""
+issue = false
+
+[layout]
+width = 50
+window_padding = 0
+container_padding = 1
+prompt_padding = 1
+
+[layout.widgets]
+time_position = "top"
+status_position = "bottom"
+
+[remember]
+username = true
+session = false
+user_session = true
+
+[secret]
+mode = "characters"
+characters = "•"
+
+[background]
+kind = "none"
+
+[session]
+sessions_dirs = [
+    "/usr/share/wayland-sessions",
+    "/usr/share/xsessions",
+]
+
+[theme]
+# Palette names are remapped by /etc/tuigreet/palette on tty2
+container = "black"        # base
+border = "bright-black"    # base1
+
+text = "white"             # text
+time = "bright-white"      # text1
+
+title = "blue"             # tint
+prompt = "bright-blue"     # tint1
+input = "bright-white"     # text1
+
+action = "cyan"            # base2
+button = "bright-blue"     # tint
