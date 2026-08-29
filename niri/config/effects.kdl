@@ -1,0 +1,19 @@
+// Misc / Effects
+// ──────────────
+
+hotkey-overlay {
+    skip-at-startup
+}
+
+
+debug {
+    honor-xdg-activation-with-invalid-serial
+}
+
+
+blur {
+    passes 4
+    offset 3.0
+    noise 0.03
+    saturation 1.5
+}

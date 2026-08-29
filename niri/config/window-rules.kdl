@@ -1,0 +1,51 @@
+// Window Rules
+// ──────────────
+
+window-rule {
+    geometry-corner-radius 10
+    clip-to-geometry true
+
+    background-effect {
+        blur true
+        xray false
+    }
+}
+
+
+// PiP float
+window-rule {
+    match app-id="zen$" title="^Picture-in-Picture$"
+
+    open-floating true
+    default-floating-position x=32 y=32 relative-to="bottom-right"
+
+    focus-ring {
+        off
+    }
+}
+
+
+// Screenshare indicator when using dynamic sharing
+window-rule {
+    match is-window-cast-target=true
+
+    focus-ring {
+        active-color "#D7AF87"
+        inactive-color "#D7AF87"
+    }
+}
+
+
+// Noctalia settings window.
+window-rule {
+    match app-id="dev.noctalia.Noctalia"
+    open-floating true
+
+    default-column-width {
+        fixed 1080
+    }
+
+    default-window-height {
+        fixed 920
+    }
+}

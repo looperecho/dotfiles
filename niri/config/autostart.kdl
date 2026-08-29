@@ -1,0 +1,3 @@
+// Autostart
+// ──────────────
+spawn-at-startup "noctalia"

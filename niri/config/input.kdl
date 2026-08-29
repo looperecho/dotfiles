@@ -1,0 +1,14 @@
+// Inputs
+// ──────────────
+input {
+    mouse {
+        natural-scroll
+    }
+}
+
+
+gestures {
+    hot-corners {
+        off
+    }
+}
