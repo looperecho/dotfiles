@@ -26,11 +26,11 @@ binds {
     // Utilities
     // ──────────────
     Print {
-        spawn-sh "~/.config/hypr/bin/screenshot.sh"
+        spawn-sh "~/.config/niri/bin/screenshot.sh"
     }
 
     Shift+Print {
-        spawn-sh "~/.config/hypr/bin/wf-record-toggle.sh"
+        spawn-sh "~/.config/niri/bin/wf-record-toggle.sh"
     }
 
     F10 {
