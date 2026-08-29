@@ -3,14 +3,14 @@ This is just a backup of my own personal linux configs.
 
 # Quicklinks
 ## WM, Bar & Notifications
-- **[Hyprland](https://github.com/hyprwm/Hyprland)** - Compositor & Window Manager  
-    [config](hypr)
-    - Set workspaces for common apps
-    - Special workspace for spotify and comms
-    - Float and centre window for focus
-- **[noctalia](https://github.com/noctalia-dev)** - Shell  
+- **[niri](https://github.com/niri-wm/niri)** - Compositor & Window Manager  
+    [config](niri)
+    - Scrolling layout with dynamic workspaces
+    - Early config so nothing crazy happening here
+- **[noctalia](https://github.com/noctalia-dev\noctalia)** - Shell  
     [config](noctalia)
     - Noctalia handles bar, launcher, widgets, notification daemon.
+    - Custom [mic status plugin](noctalia/plugins/mic-status) with mute visibility whilst mic is in use.
 
 ## Terminal Stuff
 - **ZSH** - Terminal Shell
