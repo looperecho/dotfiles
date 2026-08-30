@@ -45,7 +45,7 @@ fi
 # ┌──── SSH check
 # ▼
 if [[ -n $SSH_CONNECTION ]]; then
-    $HOME/.local/bin/pfetch
+    fastfetch
 fi
 
 
