@@ -15,6 +15,10 @@ binds {
         spawn-sh "noctalia msg panel-toggle control-center media"
     }
 
+    Super+Shift+Alt+Ctrl+Grave {
+        spawn-sh "noctalia msg panel-toggle session"
+    }
+
     // Launch
     Alt+1 { spawn "ghostty"; }
     Alt+2 { spawn "zen"; }
@@ -57,7 +61,7 @@ binds {
         fullscreen-window
     }
 
-    Super+Space {
+    Super+Shift+Alt+Ctrl+Tab {
         toggle-overview
     }
 
