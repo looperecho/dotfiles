@@ -67,7 +67,7 @@ require('kanagawa').setup({
 })
 vim.g.have_nerd_font = true 
 vim.opt.termguicolors = true
-vim.cmd.colorscheme('kanagawa-dragon')
+vim.cmd.colorscheme('hybrid')
 
 -- LSP
 vim.lsp.enable({
@@ -79,7 +79,7 @@ vim.lsp.enable({
 -- completions
 vim.opt.autocomplete = true
 vim.opt.complete = { '.', 'o' }
-vim.opt.completeopt = { 'menuone', 'noselect', 'popup' }
+vim.opt.completeopt = {'menuone', 'noselect', 'popup' }
 
 -- File Browsing
 require('oil').setup({
