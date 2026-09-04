@@ -113,13 +113,16 @@ binds {
     Super+D { move-column-right; }
     Super+W { move-window-to-workspace-up; }
     Super+S { move-window-to-workspace-down; }
+    Super+Shift+W { move-workspace-up; }
+    Super+Shift+S { move-workspace-down; }
 
     // HJKL
     Super+H { move-column-left; }
     Super+L { move-column-right; }
     Super+K { move-window-to-workspace-up; }
     Super+J { move-window-to-workspace-down; }
-
+    Super+Shift+K { move-workspace-up; }
+    Super+Shift+J { move-workspace-down; }
 
     // Direct workspace movement
     // ──────────────
@@ -133,7 +136,6 @@ binds {
     Super+8 { move-window-to-workspace 8; }
     Super+9 { move-window-to-workspace 9; }
     Super+0 { move-window-to-workspace 10; }
-
 
     // Multimedia — Volume
     // ──────────────
