@@ -1,0 +1,7 @@
+// Enviroment Vars
+// ──────────────
+
+environment {
+    QT_SCALE_FACTOR "1.25"
+    QT_QPA_PLATFORMTHEME "qt6ct"
+}
