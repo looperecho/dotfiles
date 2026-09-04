@@ -15,6 +15,7 @@ binds {
         spawn-sh "noctalia msg panel-toggle control-center media"
     }
 
+    // Launch
     Alt+1 { spawn "ghostty"; }
     Alt+2 { spawn "zen"; }
     Alt+3 { spawn "nautilus"; }
@@ -65,38 +66,16 @@ binds {
     // ──────────────
 
     // WASD
-    Super+Shift+Alt+Ctrl+A {
-        focus-column-left
-    }
-
-    Super+Shift+Alt+Ctrl+D {
-        focus-column-right
-    }
-
-    Super+Shift+Alt+Ctrl+W {
-        focus-workspace-up
-    }
-
-    Super+Shift+Alt+Ctrl+S {
-        focus-workspace-down
-    }
+    Super+Shift+Alt+Ctrl+A { focus-column-left; }
+    Super+Shift+Alt+Ctrl+D { focus-column-right; }
+    Super+Shift+Alt+Ctrl+W { focus-workspace-up; }
+    Super+Shift+Alt+Ctrl+S { focus-workspace-down; }
 
     // HJKL
-    Super+Shift+Alt+Ctrl+H {
-        focus-column-left
-    }
-
-    Super+Shift+Alt+Ctrl+L {
-        focus-column-right
-    }
-
-    Super+Shift+Alt+Ctrl+K {
-        focus-workspace-up
-    }
-
-    Super+Shift+Alt+Ctrl+J {
-        focus-workspace-down
-    }
+    Super+Shift+Alt+Ctrl+H { focus-column-left; }
+    Super+Shift+Alt+Ctrl+L { focus-column-right; }
+    Super+Shift+Alt+Ctrl+K { focus-workspace-up; }
+    Super+Shift+Alt+Ctrl+J { focus-workspace-down; }
 
     // Mouse wheel
     Super+Shift+Alt+Ctrl+WheelScrollUp cooldown-ms=150 {
@@ -126,38 +105,16 @@ binds {
     // ──────────────
 
     // WASD
-    Super+A {
-        move-column-left
-    }
-
-    Super+D {
-        move-column-right
-    }
-
-    Super+W {
-        move-window-to-workspace-up
-    }
-
-    Super+S {
-        move-window-to-workspace-down
-    }
+    Super+A { move-column-left; }
+    Super+D { move-column-right; }
+    Super+W { move-window-to-workspace-up; }
+    Super+S { move-window-to-workspace-down; }
 
     // HJKL
-    Super+H {
-        move-column-left
-    }
-
-    Super+L {
-        move-column-right
-    }
-
-    Super+K {
-        move-window-to-workspace-up
-    }
-
-    Super+J {
-        move-window-to-workspace-down
-    }
+    Super+H { move-column-left; }
+    Super+L { move-column-right; }
+    Super+K { move-window-to-workspace-up; }
+    Super+J { move-window-to-workspace-down; }
 
 
     // Direct workspace movement
