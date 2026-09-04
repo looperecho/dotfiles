@@ -17,3 +17,9 @@ blur {
     noise 0.03
     saturation 1.5
 }
+
+recent-windows {
+    highlight {
+        corner-radius 14
+    }
+}
