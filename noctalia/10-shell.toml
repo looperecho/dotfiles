@@ -35,9 +35,11 @@ categories = false
 
 [shell.launcher.providers.windows]
 prefix = "win"
+global = true
 
 [shell.launcher.providers.session]
 prefix = "sm"
+
 
 [shell.panel]
 launcher_placement = "attached"
