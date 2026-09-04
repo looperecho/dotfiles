@@ -52,6 +52,7 @@ vim.pack.add {
 	'https://github.com/rebelot/kanagawa.nvim',
 	'https://github.com/stevearc/oil.nvim',
 	'https://github.com/brenoprata10/nvim-highlight-colors',
+    'https://github.com/nvim-mini/mini.clue',
 }
 
 -- colorscheme
@@ -69,14 +70,16 @@ vim.opt.termguicolors = true
 vim.cmd.colorscheme('kanagawa-dragon')
 
 -- LSP
-vim.lsp.enable('basedpyright')
-vim.lsp.config('basedpyright', {
-    settings = {
-        ['basedpyright'] = {
-            typeCheckingMode = 'basic',
-        },
-    },
+vim.lsp.enable({
+    'ty',       -- python.py
+    'bashls',   -- bash.sh
+    'lua_ls',   -- lua.lua
 })
+
+-- completions
+vim.opt.autocomplete = true
+vim.opt.complete = { '.', 'o' }
+vim.opt.completeopt = { 'menuone', 'noselect', 'popup' }
 
 -- File Browsing
 require('oil').setup({
@@ -94,4 +97,15 @@ require('oil').setup({
     },
 })
 
-
+-- Leader key hints (miniclue)
+require('mini.clue').setup({
+    triggers = {
+        { mode = { 'n', 'x' }, keys = '<leader>' },
+    },
+    window = {
+        delay = 0,
+        config = {
+            width = '50',
+        },
+    },
+})
