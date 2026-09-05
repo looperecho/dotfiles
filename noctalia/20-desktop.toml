@@ -23,7 +23,7 @@ directory = "~/.repo/wallpapers"
 transition = ["fade"]
 
 [backdrop]
-enabled        = true
+enabled        = false
 
 
 # -----------------------------------------------------------------------------
