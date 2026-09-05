@@ -27,6 +27,10 @@ date_format = "%a %d %b"
 
 niri_overview_type_to_launch_enabled = true
 
+[shell.screen_corners]
+enabled = true
+radius = 32
+
 [shell.animation]
 speed = 2.0
 
@@ -39,7 +43,6 @@ global = true
 
 [shell.launcher.providers.session]
 prefix = "sm"
-
 
 [shell.panel]
 launcher_placement = "attached"
