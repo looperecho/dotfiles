@@ -108,6 +108,7 @@ show_label = false
 
 [widget.volume]
 show_label = false
+mute_color = "tertiary"
 
 [widget.volume.actions]
 left = "volume-mute"
