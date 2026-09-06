@@ -9,5 +9,6 @@ layout {
     focus-ring {
         active-color "rgba(255, 255, 255, 0.5)"
     }
+    // workspace layer no bg color or wallpaper
     background-color "transparent"
 }
