@@ -7,6 +7,14 @@
     "muted_color": {
       "label": "Muted Color",
       "description": "Color shown while the system microphone is muted."
+    },
+    "app_blacklist": {
+      "label": "Application Blacklist",
+      "description": "Applications whose microphone usage should be ignored. Names are matched against application.name, case-insensitively."
+    },
+    "activity_color": {
+      "label": "Activity Color",
+      "description": "Color reached at high microphone input levels while capturing."
     }
   }
 }
