@@ -65,6 +65,10 @@ binds {
         toggle-overview
     }
 
+    Super+Shift+Alt+Ctrl+R {
+        switch-preset-column-width
+    }
+
 
     // Navigation - Columns / Workspaces
     // ──────────────
