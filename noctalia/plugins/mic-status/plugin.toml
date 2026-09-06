@@ -1,15 +1,15 @@
 id = "looperecho/mic-status"
 name = "Mic Status"
-version = "0.2.0"
+version = "0.3.0"
 plugin_api = 9
 author = "looperecho"
 license = "MIT"
 
-dependencies = ["pactl"]
+dependencies = ["pactl", "cava", "wpctl"]
 tags = ["audio", "privacy", "bar"]
 icon = "microphone"
 
-description = "Combined microphone capture and system mute indicator."
+description = "Combined microphone capture, mute, and voice activity indicator."
 
 [[widget]]
 id = "mic-status"
@@ -27,4 +27,18 @@ key = "muted_color"
 type = "color"
 label_key = "settings.muted_color.label"
 description_key = "settings.muted_color.description"
-default = "error"
+default = "tertiary"
+
+[[setting]]
+key = "activity_color"
+type = "color"
+label_key = "settings.activity_color.label"
+description_key = "settings.activity_color.description"
+default = "#8DB881"
+
+[[setting]]
+key = "app_blacklist"
+type = "string_list"
+label_key = "settings.app_blacklist.label"
+description_key = "settings.app_blacklist.description"
+default = ["Noctalia Spectrum"]
