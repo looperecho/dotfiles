@@ -7,7 +7,7 @@ license = "MIT"
 
 dependencies = ["pactl", "cava", "wpctl"]
 tags = ["audio", "privacy", "bar"]
-icon = "microphone"
+icon = "microphone-filled"
 
 description = "Combined microphone capture, mute, and voice activity indicator."
 
