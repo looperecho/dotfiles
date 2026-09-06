@@ -4,11 +4,18 @@ prefer-no-csd
 
 layout {
     default-column-width { proportion 0.5; }
-    always-center-single-column
 
+    always-center-single-column
+    
+    preset-column-widths {
+        proportion 0.5
+        proportion 0.6
+    }
+    
     focus-ring {
         active-color "rgba(255, 255, 255, 0.5)"
     }
+
     // workspace layer no bg color or wallpaper
     background-color "transparent"
 }
