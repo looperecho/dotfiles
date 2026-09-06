@@ -49,7 +49,6 @@ vim.opt.backup = false
 vim.pack.add { 
 	'https://github.com/neovim/nvim-lspconfig',
 	'https://github.com/HoNamDuong/hybrid.nvim',
-	'https://github.com/rebelot/kanagawa.nvim',
 	'https://github.com/stevearc/oil.nvim',
 	'https://github.com/brenoprata10/nvim-highlight-colors',
     'https://github.com/nvim-mini/mini.clue',
@@ -61,9 +60,7 @@ require('nvim-highlight-colors').setup({
 })
 require('hybrid').setup({
     transparent = true,
-})
-require('kanagawa').setup({
-    transparent = true,
+    bold=true,
 })
 vim.g.have_nerd_font = true 
 vim.opt.termguicolors = true
