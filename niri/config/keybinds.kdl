@@ -66,7 +66,7 @@ binds {
     }
 
 
-    // Navigation — Columns / Workspaces
+    // Navigation - Columns / Workspaces
     // ──────────────
 
     // WASD
@@ -90,6 +90,9 @@ binds {
         focus-workspace-down
     }
 
+    // Columns Start - End
+    Super+Shift+Alt+Ctrl+BracketLeft    { focus-column-first; }
+    Super+Shift+Alt+Ctrl+BracketRight   { focus-column-last; }
 
     // Direct workspace navigation
     // ──────────────
@@ -105,7 +108,7 @@ binds {
     Super+Shift+Alt+Ctrl+0 { focus-workspace 10; }
 
 
-    // Movement — Columns / Workspaces
+    // Movement - Columns / Workspaces
     // ──────────────
 
     // WASD
@@ -124,6 +127,10 @@ binds {
     Super+Shift+K { move-workspace-up; }
     Super+Shift+J { move-workspace-down; }
 
+    // Columns Start - End
+    Super+BracketLeft    { move-column-to-first; }
+    Super+BracketRight   { move-column-to-last; }
+
     // Direct workspace movement
     // ──────────────
     Super+1 { move-window-to-workspace 1; }
@@ -137,7 +144,7 @@ binds {
     Super+9 { move-window-to-workspace 9; }
     Super+0 { move-window-to-workspace 10; }
 
-    // Multimedia — Volume
+    // Multimedia - Volume
     // ──────────────
     XF86AudioRaiseVolume allow-when-locked=true {
         spawn-sh "noctalia msg volume-up"
@@ -152,7 +159,7 @@ binds {
     }
 
 
-    // Multimedia — Media
+    // Multimedia - Actions
     // ──────────────
     XF86AudioNext allow-when-locked=true {
         spawn-sh "noctalia msg media next"
