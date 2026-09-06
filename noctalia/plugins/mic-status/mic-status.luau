@@ -30,7 +30,7 @@ local micLevel = 0
 local micPeak = 0
 
 -- Ignore tiny values around the microphone noise floor.
-local pulseNoiseFloor = 5
+local pulseNoiseFloor = 10
 
 -- Our testing showed normal/loud speech reaching roughly 20–50.
 local pulseFullScale = 45
@@ -224,7 +224,7 @@ local function render()
     elseif capturing then
         barWidget.setVisible(true)
         barWidget.setGlyph(
-            "microphone"
+            "microphone-filled"
         )
 
         --
