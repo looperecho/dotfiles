@@ -33,7 +33,7 @@ local micPeak = 0
 local pulseNoiseFloor = 10
 
 -- Our testing showed normal/loud speech reaching roughly 20–50.
-local pulseFullScale = 45
+local pulseFullScale = 25
 
 -- React quickly when speech begins.
 local pulseAttack = 0.70
