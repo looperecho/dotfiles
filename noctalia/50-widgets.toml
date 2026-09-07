@@ -73,8 +73,8 @@ title_scroll = "on_hover"
 [widget.media.actions]
 left = "media toggle"
 right = "panel-toggle control-center media"
-scroll_down = "none"
-scroll_up = "none"
+scroll_down = "exec spotify-launcher"
+scroll_up = "exec spotify-launcher"
 
 
 # -----------------------------------------------------------------------------
