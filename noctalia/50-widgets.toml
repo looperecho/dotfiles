@@ -113,11 +113,3 @@ mute_color = "tertiary"
 [widget.volume.actions]
 left = "volume-mute"
 right = "panel-toggle control-center audio"
-
-
-# -----------------------------------------------------------------------------
-# Notifications
-# -----------------------------------------------------------------------------
-
-[widget.notifications]
-capsule = true
