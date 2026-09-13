@@ -48,3 +48,14 @@ window-rule {
         fixed 920
     }
 }
+
+// vesktop
+window-rule {
+    match app-id="^vesktop$"
+
+    draw-border-with-background false
+
+    background-effect {
+        blur true
+    }
+}
