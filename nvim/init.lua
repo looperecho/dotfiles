@@ -51,7 +51,7 @@ vim.pack.add {
 	'https://github.com/HoNamDuong/hybrid.nvim',
 	'https://github.com/stevearc/oil.nvim',
 	'https://github.com/brenoprata10/nvim-highlight-colors',
-    'https://github.com/nvim-mini/mini.clue',
+	'https://github.com/nvim-mini/mini.clue',
 }
 
 -- colorscheme
@@ -99,6 +99,13 @@ require('mini.clue').setup({
     triggers = {
         { mode = { 'n', 'x' }, keys = '<leader>' },
     },
+
+    clues = {
+        { mode = 'n', keys = '<leader>d', desc ='Document' },
+        { mode = 'n', keys = '<leader>i', desc ='Insert' },
+        { mode = 'n', keys = '<leader>is', desc ='Shebangs' },
+    },
+
     window = {
         delay = 0,
         config = {
