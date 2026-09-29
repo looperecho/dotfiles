@@ -1,4 +1,6 @@
 # .zshrc
+autoload -Uz compinit
+compinit
 
 # ┌──── Set zsh directories 
 # ▼
@@ -15,10 +17,12 @@ alias e="$EDITOR"
 
 # ┌──── Paths 
 # ▼
-export PATH=$HOME/.repo/bin:$PATH
-export PATH=$HOME/.local/bin:$PATH
-export PATH=$HOME/.local/bin/appimages:$PATH
-export XDG_CONFIG_HOME="$HOME/.config"
+typeset -U path PATH
+path=(
+    "$HOME/.repo/bin"
+    "$HOME/.local/bin/appimages"
+    $path
+)
 
 
 # ┌──── Load Keybindings 
@@ -46,16 +50,6 @@ fi
 # ▼
 if [[ -n $SSH_CONNECTION ]]; then
     fastfetch
-fi
-
-
-# ┌──── Pyenv Stuff 
-# ▼ 
-if [ -d $HOME/.local/share/pyenv ]; then
-	export PYENV_ROOT="$HOME/.local/share/pyenv"
-	[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
-	eval "$(pyenv init -)"
-	eval "$(pyenv virtualenv-init -)"
 fi
 
 
