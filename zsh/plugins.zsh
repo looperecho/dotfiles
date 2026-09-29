@@ -47,9 +47,34 @@ fi
 # ┌──── fzf Shell Intergration 
 # ▼
 # eval "$(fzf --zsh)"
-source <(fzf --zsh)
+# source <(fzf --zsh)
 
 
 # ┌──── Zioxide 
 # ▼
 eval "$(zoxide init --cmd cd zsh)"
+
+
+
+# ┌──── Commands 
+# ▼ derrived from .local/bin/name & name.d/function.sh
+_dispatch_completion() {
+    local cmd="$words[1]"
+    local dir="$HOME/.local/bin/${cmd}.d"
+
+    if (( CURRENT == 2 )); then
+        local -a commands
+        commands=("$dir"/*(N:t))
+        _describe 'command' commands
+    else
+        _files
+    fi
+}
+
+for dir in "$HOME/.local/bin"/*.d(N/); do
+    cmd="${dir:t:r}"
+
+    if [[ -x "$HOME/.local/bin/$cmd" ]]; then
+        compdef _dispatch_completion "$cmd"
+    fi
+done
