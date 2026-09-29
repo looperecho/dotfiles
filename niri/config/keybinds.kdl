@@ -39,7 +39,7 @@ binds {
     }
 
     F10 {
-        spawn-sh "~/.repo/bin/es2-mic toggle"
+        spawn-sh "es2 mic toggle"
     }
 
     Super+apostrophe {
