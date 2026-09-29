@@ -23,10 +23,10 @@ vim.keymap.set("i", "()", "()<Left>")
 
 ---- Leader Combos
 -- open Oil
-vim.keymap.set('n', '<leader>e', ':Oil --float --preview<CR>', {desc='Open Oil'})
+vim.keymap.set('n', '<leader>o', ':Oil --float --preview<CR>', {desc='Open Oil'})
 
 -- make file executable
-vim.keymap.set('n', '<leader>dx', '<cmd>!chmod +x %<CR>', {desc='Make Current File Executable'})
+vim.keymap.set('n', '<leader>dx', '<cmd>!chmod +x %<CR>', {desc='Make Executable'})
 
 -- save as root
 vim.keymap.set('n', '<leader>dw', function()
@@ -39,9 +39,21 @@ vim.keymap.set('n', '<leader>dw', function()
     vim.cmd('write !sudo tee % >/dev/null')
     vim.cmd('edit!')
 end, {
-    desc = 'Write File As Root',
+    desc = 'Write As Root',
 })
 
+-- insert
+vim.keymap.set('n', '<leader>isb', function()
+  vim.api.nvim_buf_set_lines(0, 0, 0, false, { '#!/usr/bin/env bash' })
+end, {
+  desc = "Bash",
+})
+
+vim.keymap.set('n', '<leader>isp', function()
+  vim.api.nvim_buf_set_lines(0, 0, 0, false, { '#!/usr/bin/env python' })
+end, {
+  desc = "Python",
+})
 
 ---- Completion navigation
 -- next
